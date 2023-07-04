@@ -1,0 +1,65 @@
+{
+  "name": "spikestream-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.7.15",
+    "@emailjs/browser": "^3.11.0",
+    "@react-spring/parallax": "^9.7.3",
+    "@react-spring/web": "^9.7.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^10.12.17",
+    "gsap": "^3.11.5",
+    "gsap-trial": "^3.12.1",
+    "hamburger-react": "^2.5.0",
+    "history": "^5.3.0",
+    "locomotive-scroll": "^4.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-horizontal-scrolling-menu": "^4.0.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-locomotive-scroll": "^0.2.2",
+    "react-plx": "^2.1.2",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1",
+    "react-share-on-social": "^1.0.12",
+    "smooth-scrollbar": "^8.8.3",
+    "split-type": "^0.3.3",
+    "styled-components": "^5.3.9",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.2.7"
+  }
+}

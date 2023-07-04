@@ -1,0 +1,75 @@
+.root {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    font-size: 40px;
+}
+
+.heading {
+    font-size: 180px;
+    line-height: 200px;
+    font-weight: 300;
+}
+
+.content {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    z-index: 10;
+}
+
+.asteroid {
+    display: block;
+    width: 1024px;
+    position: absolute;
+    right: -500px;
+    bottom: -500px;
+}
+
+.galaxy {
+    display: block;
+    max-width: 374px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .asteroid {
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .heading {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .galaxy {
+        display: block;
+        max-width: 174px;
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+    }
+
+    .asteroid {
+        display: none;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}

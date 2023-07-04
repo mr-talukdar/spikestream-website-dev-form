@@ -1,0 +1,133 @@
+.root {
+    min-height: 2160px;
+    height: 200vh;
+    position: relative;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1080px;
+}
+
+.text {
+    font-size: 40px;
+}
+
+.heading {
+    font-size: 140px;
+    line-height: 160px;
+}
+
+.lightTrigger {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    width: 100px;
+    height: 200px;
+}
+
+.content {
+    height: 1080px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    z-index: 10;
+    gap: 100px;
+}
+
+.planet {
+    max-width: 1240px;
+    position: absolute;
+    right: -300px;
+    bottom: 0;
+}
+
+.asteroid {
+    max-width: 150px;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+
+.light {
+    max-width: 1240px;
+    position: absolute;
+    z-index: 2;
+}
+
+.explosion {
+    max-width: 1240px;
+    position: absolute;
+    right: -78px;
+    bottom: 170px;
+    z-index: 2;
+}
+
+.startTrigger {
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: 200vh;
+}
+
+.endtrigger {
+    position: absolute;
+    bottom: 0px;
+}
+
+@media only screen and (max-width: 1279px) {
+    .root {
+        height: 150vh;
+        min-height: unset;
+    }
+
+    .container {
+        height: 800px;
+        min-height: unset;
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .light {
+        max-width: 620px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .planet {
+        max-width: 620px;
+        position: absolute;
+        right: -200px;
+        bottom: 0;
+    }
+
+    .explosion {
+        max-width: 620px;
+        position: absolute;
+        right: -228px;
+        bottom: -40px;
+        z-index: 2;
+    }
+}

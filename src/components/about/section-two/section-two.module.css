@@ -1,0 +1,84 @@
+.root {
+    height: 150vh;
+    min-height: 2160px;
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    position: absolute;
+    font-size: 40px;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.heading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 140px;
+    line-height: 160px;
+}
+
+.light {
+    display: block;
+    max-width: 1024px;
+    width: 90%;
+    position: absolute;
+    top: -460px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.planet {
+    display: block;
+    max-width: 830px;
+    width: 90%;
+    position: absolute;
+    top: -130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.endtrigger {
+    position: absolute;
+    bottom: 0px;
+}
+
+.asteroid1 {
+    position: absolute;
+    top: 730px;
+    right: 400px;
+}
+
+@media only screen and (max-width: 1279px) {
+    .root {
+        height: 100vh;
+        min-height: unset;
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .light {
+        display: none;
+    }
+
+    .asteroid1 {
+        position: absolute;
+        top: 730px;
+        right: 300px;
+    }
+}

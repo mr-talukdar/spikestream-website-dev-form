@@ -1,0 +1,21 @@
+.root {
+    background-image: url("../../images/about/bg.png");
+    background-size: cover;
+    min-height: 100vh;
+    font-family: "Graphik", sans-serif;
+    overflow: hidden;
+}
+
+.progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent);
+    bottom: 100px;
+}
+
+.old {
+    position: absolute;
+    top: 100%;
+}
