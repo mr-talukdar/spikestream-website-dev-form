@@ -16,7 +16,7 @@ export default function SectionTwo({ scrollY }) {
         const headingSY = parseInt(scrollY.current * 0.5)
 
         if (lightSY < 700) {
-            setLightScroll(-460 + lightSY)
+            setLightScroll(-500 + lightSY)
         }
 
         if (textSY < 1200) {
