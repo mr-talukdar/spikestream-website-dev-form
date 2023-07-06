@@ -4,14 +4,6 @@
     overflow: hidden;
 }
 
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1080px;
-}
-
 .text {
     font-size: 30px;
 }
@@ -84,13 +76,25 @@
 .splashberg {
     margin: auto;
     position: relative;
-    margin-bottom: -50px;
-    z-index: 10;
+    max-width: 1920px;
+    height: 1080px;
 }
 
 .splash {
-    width: 150%;
+    width: 200%;
     z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -80px;
+    z-index: 1;
+}
+
+.splashTrigger {
+    position: absolute;
+    top: 30vh;
+    height: 100vh;
 }
 
 .water {
@@ -100,10 +104,37 @@
 
 .iceberg {
     position: absolute;
+    z-index: -1;
+    bottom: -1080px;
     left: 0;
     right: 0;
-    bottom: -78%;
-    z-index: -1;
+    width: 1400px;
+    margin: auto;
+}
+
+.startTrigger {
+    position: absolute;
+    top: 200px;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1400px) {
+    .iceberg {
+        width: 1000px;
+    }
+
+    .iceberg {
+        width: 1000px;
+        bottom: -780px;
+    }
+
+    .splash {
+        bottom: -5%;
+    }
+
+    .splashberg {
+        height: 980px;
+    }
 }
 
 @media only screen and (max-width: 1279px) {
@@ -130,5 +161,50 @@
         z-index: 10;
         gap: 100px;
         padding-top: 100px;
+    }
+
+    .splashberg {
+        height: 780px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .iceberg {
+        width: 600px;
+        bottom: -480px;
+    }
+
+    .splash {
+        bottom: -3.5%;
+    }
+
+    .splashberg {
+        height: 580px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .iceberg {
+        width: 400px;
+        bottom: -320px;
+    }
+
+    .splash {
+        bottom: -2.5%;
+    }
+
+    .splashberg {
+        height: 480px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .iceberg {
+        width: 300px;
+        bottom: -220px;
+    }
+
+    .splash {
+        bottom: -1%;
     }
 }

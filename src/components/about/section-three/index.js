@@ -34,31 +34,31 @@ export default function SectionThree({ scrollY }) {
 
     const lightRightScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 1],
-        ["1500", "160px"]
+        [0, 0.25],
+        ["1500px", "160px"]
     )
 
     const lightTopScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 1],
+        [0, 0.25],
         ["-10%", "19%"]
     )
 
     const lightRightMobileScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 1],
-        [window.innerWidth < 768 ? "200px" : "700px", "0px"]
+        [0, 0.25],
+        [window.innerWidth < 768 ? "400px" : "700px", "0px"]
     )
 
     const lightTopMobileScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 1],
+        [0, 0.25],
         ["-10%", "19%"]
     )
 
     const explosionOpacityValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 1],
+        [0, 0.25],
         [-5, 1]
     )
 
@@ -115,7 +115,6 @@ export default function SectionThree({ scrollY }) {
 
     return (
         <motion.div className={css.root} ref={containerRef}>
-            <div className={css.startTrigger} />
             <motion.div
                 className={css.container}
                 style={{ top: containerScrollValue }}

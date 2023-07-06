@@ -27,7 +27,7 @@
 .lightTrigger {
     display: block;
     position: absolute;
-    bottom: 20%;
+    bottom: -200px;
     width: 100px;
     height: 200px;
 }
@@ -82,7 +82,7 @@
     position: absolute;
     top: 0px;
     width: 100px;
-    height: 200vh;
+    height: 100px;
 }
 
 .endtrigger {

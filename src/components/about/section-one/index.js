@@ -4,36 +4,76 @@ import { useState } from "react"
 import asteroidIMG from "@images/about/asteroid1.png"
 import galaxyIMG from "@images/about/galaxy.png"
 import { gsap } from "gsap"
-import ScrollTrigger from "gsap-trial/ScrollTrigger"
 
 export default function SectionOne({ scrollY }) {
-    gsap.registerPlugin(ScrollTrigger)
     const [galaxyScroll, setGalaxyScroll] = useState(50)
+    const [galaxyScrollMobile, setGalaxyScrollMobile] = useState(180)
     const [asteroidScroll, setAsteroidScroll] = useState(-500)
+    const [asteroidScrollMobile, setAsteroidScrollMobile] = useState(-90)
+    const isMobile = window.innerWidth < 576
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const galaxySY = parseInt(scrollY.current * 0.4)
+        const galaxySYMobile = parseInt(scrollY.current * 0.1)
         const asteroidSY = parseInt(scrollY.current * 0.15)
+        const asteroidSYMobile = parseInt(scrollY.current * -0.15)
 
         if (galaxySY < 900) {
             setGalaxyScroll(50 - galaxySY)
+            setGalaxyScrollMobile(180 - galaxySYMobile)
         }
 
         if (asteroidSY < 900) {
             setAsteroidScroll(-500 - asteroidSY)
+            setAsteroidScrollMobile(-90 - asteroidSYMobile)
         }
     })
 
+    if (isMobile) {
+        return (
+            <motion.div className={css.root}>
+                <motion.div
+                    className={css.content}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 4, delay: 0.5 }}
+                >
+                    <h1 className={css.heading}>Hello.</h1>
+                    <p className={css.text}>
+                        We are proficient thinkers and engineers who aspire for
+                        excellence and growth
+                    </p>
+                </motion.div>
+
+                <img
+                    src={asteroidIMG}
+                    className={css.asteroid}
+                    style={{ bottom: asteroidScrollMobile }}
+                />
+                <motion.img
+                    src={galaxyIMG}
+                    className={css.galaxy}
+                    style={{ bottom: galaxyScrollMobile }}
+                />
+            </motion.div>
+        )
+    }
+
     return (
         <motion.div className={css.root}>
-            <div className={css.content}>
+            <motion.div
+                className={css.content}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 4, delay: 0.5 }}
+            >
                 <h1 className={css.heading}>Hello.</h1>
                 <p className={css.text}>
                     We are proficient thinkers and engineers
                     <br />
                     who aspire for excellence and growth
                 </p>
-            </div>
+            </motion.div>
 
             <img
                 src={asteroidIMG}

@@ -54,12 +54,25 @@
 .asteroid1 {
     position: absolute;
     top: 730px;
-    right: 400px;
+    right: 22%;
 }
 
-@media only screen and (max-width: 1279px) {
+.lightTrigger {
+    position: absolute;
+    top: 100px;
+    height: 80vh;
+}
+
+.textTrigger {
+    position: absolute;
+    top: 100vh;
+    height: 150vh;
+    min-height: 2160px;
+}
+
+@media only screen and (max-width: 768px) {
     .root {
-        height: 100vh;
+        height: 60vh;
         min-height: unset;
     }
 
@@ -73,13 +86,27 @@
         font-size: 20px;
     }
 
-    .light {
-        display: none;
-    }
-
     .asteroid1 {
         position: absolute;
-        top: 730px;
-        right: 300px;
+        width: 140px;
+        right: 10%;
+        z-index: 10;
+    }
+
+    .lightTrigger {
+        height: 50vh;
+    }
+
+    .textTrigger {
+        top: 60vh;
+        height: 1220px;
+    }
+
+    .planet {
+        width: 396px;
+    }
+
+    .light {
+        width: 396px;
     }
 }
