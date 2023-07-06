@@ -46,4 +46,9 @@
     .text {
         font-size: 20px;
     }
+
+    .container {
+        padding-top: 120px;
+        gap: 20px;
+    }
 }

@@ -39,7 +39,7 @@ export default function SectionTwo({ scrollY }) {
     const headingTopScrollValue = useTransform(
         textTrigger.scrollYProgress,
         [0, 1],
-        ["600px", "2160px"]
+        ["400px", "2160px"]
     )
 
     const textTopScrollValue = useTransform(
