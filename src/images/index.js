@@ -39,7 +39,9 @@ const PORTFOLIO_IMAGES = {
   KotakLoan: require("./portfolio/kotak.png"),
   yippee: require("./portfolio/yipee.png"),
   kotakBill: require("./portfolio/kotak_bill.png"),
-  vectorflow: require("./portfolio/vectorflow.png")
+  vectorflow: require("./portfolio/vectorflow.png"),
+  form_error: require("./portfolio/form/error.png"),
+  form_success: require("./portfolio/form/success.png"),
 }
 
 const KETO_IMAGES = {

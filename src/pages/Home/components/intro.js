@@ -8,6 +8,16 @@ import gsap from "gsap";
 function Intro({ handleScrollToContact }) {
   const sectionRef = useRef();
 
+  const videoRef = useRef(null);
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {
+        if (videoRef.current) videoRef.current.controls = false;
+      });
+
+    }
+  }, []);
+
   useEffect(() => {
     gsap.fromTo(
       '.intro .fade-out',
@@ -39,7 +49,7 @@ function Intro({ handleScrollToContact }) {
   return (
     <General.Container ref={sectionRef} >
       <div className="intro h-full w-full">
-        <video className="absolute top-0 left-0 w-full h-full object-cover" loop muted preload="auto" autoPlay playsInline={true} src={HOME_BG.Intro} type='video/mp4'>
+        <video ref={videoRef} className="absolute top-0 left-0 w-full h-full object-cover" loop muted preload="auto" autoPlay playsInline={true} src={HOME_BG.Intro} type='video/mp4'>
         </video>
         <div className="absolute top-0 left-0 w-full h-full bg-black fade-out"></div>
         <div className="absolute top-0 left-0 w-full h-full px-10 py-32 tablet:py-20 tablet:px-28 laptop:px-44 flex flex-col justify-end">
