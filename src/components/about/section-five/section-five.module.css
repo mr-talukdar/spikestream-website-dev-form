@@ -140,13 +140,13 @@
 
 @media only screen and (max-width: 1279px) {
     .heading {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 50px;
         font-weight: bold;
     }
 
     .text {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .water {
@@ -158,9 +158,9 @@
     }
 
     .content {
-        padding-bottom: 200px;
+        padding-bottom: 400px;
         z-index: 10;
-        gap: 100px;
+        gap: 20px;
         padding-top: 100px;
     }
 
