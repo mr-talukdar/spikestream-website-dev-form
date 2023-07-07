@@ -24,10 +24,10 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 800px;
+    padding-bottom: 1000px;
     z-index: 10;
     gap: 50px;
-    padding-top: 1100px;
+    padding-top: 900px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
@@ -77,8 +77,8 @@
 .splashberg {
     margin: auto;
     position: relative;
-    max-width: 1920px;
-    height: 1080px;
+    max-width: 1680px;
+    height: 1050px;
 }
 
 .splash {
@@ -106,10 +106,10 @@
 .iceberg {
     position: absolute;
     z-index: -1;
-    bottom: -1080px;
+    bottom: -780px;
     left: 0;
     right: 0;
-    width: 1400px;
+    width: 1000px;
     margin: auto;
 }
 
