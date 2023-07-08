@@ -53,13 +53,13 @@
 
 @media only screen and (max-width: 1279px) {
     .heading {
-        font-size: 35px;
+        font-size: 50px;
         line-height: 50px;
         font-weight: bold;
     }
 
     .text {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .galaxy {
@@ -75,6 +75,7 @@
     }
 
     .content {
+        gap: 20px;
         padding: 20px;
     }
 }

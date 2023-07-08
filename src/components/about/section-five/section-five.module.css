@@ -90,7 +90,7 @@
     right: 0;
     margin: auto;
     bottom: -80px;
-    z-index: 40;
+    z-index: 20;
 }
 
 .splashTrigger {
@@ -144,6 +144,7 @@
         font-size: 35px;
         line-height: 50px;
         font-weight: bold;
+        padding-bottom: 20px;
     }
 
     .text {
@@ -159,7 +160,7 @@
     }
 
     .content {
-        padding-bottom: 370px;
+        padding-bottom: 20px;
         z-index: 10;
         gap: 20px;
         padding-top: 0px;

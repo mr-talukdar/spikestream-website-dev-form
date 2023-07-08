@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 export default function SectionSix() {
     const navigate = useNavigate()
     return (
-        <div className="top-0 w-full h-screen">
+        <div className=" w-full h-screen">
             <div className="about-competencies h-full flex flex-col justify-between px-10 tablet:px-28 laptop:px-28 tablet:py-20 py-16 laptop:py-12 mac:py-24 laptop:px-44 bg-black">
                 <div>
                     <div className="text-base ultrawide:text-lg">
