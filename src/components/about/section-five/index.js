@@ -15,7 +15,7 @@ export default function SectionFive({ scrollY }) {
     const splashWidthScrollValue = useTransform(
         splashTrigger.scrollYProgress,
         [0, 1],
-        ["0%", "100%"]
+        ["-50%", "150%"]
     )
 
     return (

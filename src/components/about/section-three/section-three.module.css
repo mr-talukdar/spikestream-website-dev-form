@@ -27,7 +27,7 @@
 .lightTrigger {
     display: block;
     position: absolute;
-    bottom: -200px;
+    bottom: 200px;
     width: 100px;
     height: 200px;
 }
@@ -44,9 +44,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 300px;
     z-index: 10;
-    gap: 100px;
+    gap: 50px;
 }
 
 .planet {
@@ -102,13 +102,13 @@
     }
 
     .heading {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 50px;
         font-weight: bold;
     }
 
     .text {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .light {
@@ -130,5 +130,11 @@
         right: -228px;
         bottom: -40px;
         z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .lightTrigger {
+        bottom: -100px;
     }
 }

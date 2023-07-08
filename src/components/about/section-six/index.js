@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom"
 export default function SectionSix() {
     const navigate = useNavigate()
     return (
-        <div className="w-full h-screen">
-            <div className="about-competencies h-full flex flex-col justify-between px-10 tablet:px-28 laptop:px-44 first-letter:tablet:py-20   mac:py-[-20]  bg-black">
+        <div className="top-0 w-full h-screen">
+            <div className="about-competencies h-full flex flex-col justify-between px-10 tablet:px-28 laptop:px-28 tablet:py-20 py-16 laptop:py-12 mac:py-24 laptop:px-44 bg-black">
                 <div>
                     <div className="text-base ultrawide:text-lg">
                         Competencies
@@ -31,22 +31,22 @@ export default function SectionSix() {
                         <div className="smallphone:mb-2 mb-4 tablet:mb-6 laptop:mb-5 mac:mb-7 ultrawide:mb-10">
                             Web + App Development
                         </div>
-
-                        <div>
-                            <div
-                                className="flex pt-4 flex-row items-center cursor-pointer "
-                                onClick={() => navigate("/works")}
-                            >
-                                <div className="text-sm font-medium">
-                                    View Our Work
-                                </div>
-                                <div className="ml-5 items-center w-2">
-                                    <img
-                                        src={HOME_ICONS.RightArrow}
-                                        className="object-contain"
-                                        alt="Know more Icon"
-                                    />
-                                </div>
+                        <div className="fade-up">
+                            Augmented & Virtual Reality (AR / VR)
+                        </div>
+                        <div
+                            className="flex flex-row items-center cursor-pointer"
+                            onClick={() => navigate("/works")}
+                        >
+                            <div className="text-sm font-medium">
+                                View Our Work
+                            </div>
+                            <div className="ml-5 items-center w-2">
+                                <img
+                                    src={HOME_ICONS.RightArrow}
+                                    className="object-contain"
+                                    alt="Know more Icon"
+                                />
                             </div>
                         </div>
                     </div>

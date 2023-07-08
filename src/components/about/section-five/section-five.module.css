@@ -3,6 +3,7 @@
     text-align: center;
     overflow: hidden;
     padding-bottom: 0px;
+    height: fit-content;
 }
 
 .text {
@@ -77,8 +78,8 @@
 .splashberg {
     margin: auto;
     position: relative;
-    max-width: 1680px;
-    height: 1050px;
+    max-width: 1920px;
+    height: 1080px;
 }
 
 .splash {
@@ -89,7 +90,7 @@
     right: 0;
     margin: auto;
     bottom: -80px;
-    z-index: 1;
+    z-index: 40;
 }
 
 .splashTrigger {
@@ -158,10 +159,10 @@
     }
 
     .content {
-        padding-bottom: 400px;
+        padding-bottom: 370px;
         z-index: 10;
         gap: 20px;
-        padding-top: 100px;
+        padding-top: 0px;
     }
 
     .splashberg {

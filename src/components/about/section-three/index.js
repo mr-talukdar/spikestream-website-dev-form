@@ -34,31 +34,31 @@ export default function SectionThree({ scrollY }) {
 
     const lightRightScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 0.25],
+        [0, 1],
         ["1500px", "160px"]
     )
 
     const lightTopScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 0.25],
+        [0, 1],
         ["-10%", "19%"]
     )
 
     const lightRightMobileScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 0.25],
+        [0, 1],
         [window.innerWidth < 768 ? "400px" : "700px", "0px"]
     )
 
     const lightTopMobileScrollValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 0.25],
+        [0, 1],
         ["-10%", "19%"]
     )
 
     const explosionOpacityValue = useTransform(
         lightTrigger.scrollYProgress,
-        [0, 0.25],
+        [0, 1],
         [-5, 1]
     )
 
