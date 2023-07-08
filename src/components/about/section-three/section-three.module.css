@@ -131,6 +131,10 @@
         bottom: -40px;
         z-index: 2;
     }
+    .content {
+        gap: 10px;
+        padding-top: 200px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
