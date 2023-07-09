@@ -28,6 +28,7 @@ module.exports = {
         mac2: { min: "1400px", max: "1600px" },
         // => @media (min-width: 1600px) { ... }
         ultrawide: "1921px",
+        videoFix: { min: "1600px", max: "1700px", "min-height": "900px", "max-height": "1000px" },
         // => @media (min-width: 1920px) { ... }
       },
     },

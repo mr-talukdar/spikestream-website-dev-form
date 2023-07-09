@@ -8,7 +8,7 @@ function Sec1(props) {
                 <div
                     className="bg-mobile-border bg-contain bg-no-repeat bg-center h-full w-10/12 tablet:w-full"
                 >
-                    <div className="relative inset-0 flex justify-center items-center w-full h-full p-3 tablet:p-20 laptop:p-5">
+                    <div className="relative inset-0 flex justify-center items-center w-full h-full p-3 tablet:p-20 laptop:p-6 videoFix:p-10">
                         <div>
                             <video
                                 className="object-contain w-full h-full rounded-xl"
