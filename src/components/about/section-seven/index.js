@@ -30,7 +30,7 @@ export default function SectionSeven() {
                                         className="h-5 w-5 bg-no-repeat"
                                     ></div>
                                     <div className="ml-3 smallphone:text-sm text-base text-black">
-                                        Reach Out
+                                        Let’s Talk
                                     </div>
                                 </a>
                             </div>

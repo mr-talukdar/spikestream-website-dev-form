@@ -141,14 +141,13 @@
 
 @media only screen and (max-width: 1279px) {
     .heading {
-        font-size: 35px;
+        font-size: 40px;
         line-height: 50px;
-        font-weight: bold;
-        padding-bottom: 20px;
+        padding-bottom: 150px;
     }
 
     .text {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .water {
@@ -157,6 +156,10 @@
 
     .startTrigger {
         height: 100vh;
+    }
+
+    .splashTrigger {
+        top: 0vh;
     }
 
     .content {

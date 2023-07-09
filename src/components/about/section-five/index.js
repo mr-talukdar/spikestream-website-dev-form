@@ -15,7 +15,7 @@ export default function SectionFive({ scrollY }) {
     const splashWidthScrollValue = useTransform(
         splashTrigger.scrollYProgress,
         [0, 1],
-        ["-50%", "150%"]
+        ["-40%", "90%"]
     )
 
     return (
@@ -33,11 +33,31 @@ export default function SectionFive({ scrollY }) {
 
             <div className={css.water}>
                 <motion.div className={css.content}>
-                    <motion.p className={css.text}>
+                    <motion.p
+                        className={css.text}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, delay: 1 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 },
+                        }}
+                    >
                         Because we believe that
                     </motion.p>
 
-                    <motion.h1 className={css.heading}>
+                    <motion.h1
+                        className={css.heading}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ duration: 2, delay: 2 }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 },
+                        }}
+                    >
                         Success is not <br />
                         what you see, but a <br /> strategy at play
                     </motion.h1>
@@ -48,7 +68,11 @@ export default function SectionFive({ scrollY }) {
                 <div className={css.waterbg2} />
             </div>
 
-            <div className={css.splashTrigger} ref={splashRef} />
+            <div
+                className={css.splashTrigger}
+                ref={splashRef}
+                id="spashtrigger"
+            />
         </motion.div>
     )
 }

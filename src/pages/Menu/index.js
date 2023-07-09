@@ -103,9 +103,17 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                                 className="h-5 w-5 bg-no-repeat"
                                             ></div>
                                             <div className="ml-3 text-base text-black">
-                                                Reach Out
+                                                Let’s Talk
                                             </div>
                                         </a>
+                                    </div>
+                                </div>
+                                <div className="hidden laptop:block ">
+                                    <div className="mt-8">Studio Address</div>
+                                    <div className="mt-4 text-subtle">
+                                        Spike Stream, B-304, Swapnalok CHS LTD,
+                                        Off Filmcity Road, India, Mumbai -
+                                        400097.
                                     </div>
                                 </div>
                                 <div className="">
@@ -118,14 +126,6 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                         >
                                             thinkbig@spikestream.co
                                         </a>
-                                    </div>
-                                </div>
-                                <div className="hidden laptop:block ">
-                                    <div className="mt-8">Studio Address</div>
-                                    <div className="mt-4 text-subtle">
-                                        Spike Stream, B-304, Swapnalok CHS LTD,
-                                        Off Filmcity Road, India, Mumbai -
-                                        400097.
                                     </div>
                                 </div>
                             </div>

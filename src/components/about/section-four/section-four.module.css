@@ -1,6 +1,6 @@
 .root {
     position: relative;
-    padding-top: 600px;
+
     bottom: 0;
 }
 
@@ -41,14 +41,13 @@
     }
 
     .heading {
-        font-size: 35px;
+        font-size: 40px;
         line-height: 50px;
-        font-weight: bold;
     }
 
     .text {
         padding-top: 200px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .container {

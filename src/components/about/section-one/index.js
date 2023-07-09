@@ -32,17 +32,24 @@ export default function SectionOne({ scrollY }) {
     if (isMobile) {
         return (
             <motion.div className={css.root}>
-                <motion.div
-                    className={css.content}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 4, delay: 0.5 }}
-                >
-                    <h1 className={css.heading}>Hello.</h1>
-                    <p className={css.text}>
+                <motion.div className={css.content}>
+                    <motion.h1
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 4, delay: 0.5 }}
+                        className={css.heading}
+                    >
+                        Hello!
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 4, delay: 2 }}
+                        className={css.text}
+                    >
                         We are proficient thinkers and engineers who aspire for
                         excellence and growth
-                    </p>
+                    </motion.p>
                 </motion.div>
 
                 <img
@@ -61,18 +68,25 @@ export default function SectionOne({ scrollY }) {
 
     return (
         <motion.div className={css.root}>
-            <motion.div
-                className={css.content}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 4, delay: 0.5 }}
-            >
-                <h1 className={css.heading}>Hello.</h1>
-                <p className={css.text}>
+            <motion.div className={css.content}>
+                <motion.h1
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 4, delay: 0.5 }}
+                    className={css.heading}
+                >
+                    Hello!
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 4, delay: 3 }}
+                    className={css.text}
+                >
                     We are proficient thinkers and engineers
                     <br />
                     who aspire for excellence and growth
-                </p>
+                </motion.p>
             </motion.div>
 
             <img

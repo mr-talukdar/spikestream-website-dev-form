@@ -75,12 +75,12 @@
     .root {
         height: 60vh;
         min-height: unset;
+        line-height: 1400%;
     }
 
     .heading {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 50px;
-        font-weight: bold;
     }
 
     .text {
