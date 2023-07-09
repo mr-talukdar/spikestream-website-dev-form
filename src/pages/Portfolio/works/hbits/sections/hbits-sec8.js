@@ -21,14 +21,14 @@ function HbitsSec8() {
     useEffect(() => {
         if (isRevealed) {
             gsap.to(
-                '#hbitssec10 .fade-up',
+                '#hbitssec12 .fade-up',
                 AnimConfig.fadeUpConfig
             );
         }
     }, [isRevealed]);
     return (
         <div ref={sectionRef} data-scroll-section>
-            <div id="hbitssec10">
+            <div id="hbitssec12">
                 <div className='bg-black py-12 min-h-screen w-screen flex'>
                     <div className='mx-auto flex flex-col items-center'>
                         <div className="text-base tablet:text-lg text-white text-center fade-up mt-8">Social & Display</div>

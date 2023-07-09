@@ -46,7 +46,7 @@ function Hbits() {
             <General.CanvasContainer isWideScreen={isWideScreen}>
               <Section className="ketodetail font-graphik text-[16px] laptop:text-[28px] text-[#B1B1B1] bg-black">
                 <div className="w-full">
-                <Components.IntroPage
+                  <Components.IntroPage
                     id="hbitssec1"
                     rect={body ? body.rect : null}
                     navigate={navigate}
@@ -79,16 +79,26 @@ function Hbits() {
                   <Sections.HbitsSec5 />
                   <Components.WebImage
                     id="hbitssec6"
-                    image1={HBITS_IMAGES.web1}
-                    image2={HBITS_IMAGES.web2}
+                    image={HBITS_IMAGES.web1}
+                    hasTopBorder={true}
+                    spacing={'pt-20 pb-5'}
                   />
                   <Components.WebImage
                     id="hbitssec7"
-                    image1={HBITS_IMAGES.web3}
-                    image2={HBITS_IMAGES.web4}
+                    image={HBITS_IMAGES.web2}
+                  />
+                  <Components.WebImage
+                    id="hbitssec8"
+                    image={HBITS_IMAGES.web3}
+                  />
+                  <Components.WebImage
+                    id="hbitssec9"
+                    image={HBITS_IMAGES.web4}
+                    hasBottomBorder={true}
+                    spacing={'pt-5 pb-20'}
                   />
                   <Components.MobileScreensLayout
-                    id="hbitssec8"
+                    id="hbitssec10"
                     imageList={[
                       HBITS_IMAGES.mobile1,
                       HBITS_IMAGES.mobile2,
@@ -98,8 +108,8 @@ function Hbits() {
                     hasTopBorder={true}
                     spacing={'pt-20 pb-5'}
                   />
-                                    <Components.MobileScreensLayout
-                    id="hbitssec9"
+                  <Components.MobileScreensLayout
+                    id="hbitssec11"
                     imageList={[
                       HBITS_IMAGES.mobile4,
                       HBITS_IMAGES.mobile5,

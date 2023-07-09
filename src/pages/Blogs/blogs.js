@@ -112,10 +112,14 @@ function Blogs() {
                       <p className="fade-up">Blogs</p>
                     </div>
                     <div
-                      className={`mt-6 text-3xl laptop:text-6xl laptop:w-3/5 leading-10 font-light `}
+                      className={`mt-6 text-4xl laptop:text-6xl tablet:w-2/3 font-light`}
                     >
-                      <p className="fade-up">
+                      <p className="fade-up tablet:leading-[50px] laptop:leading-[70px] laptop:hidden">
                         Thoughts on how design will shape our future
+                      </p>
+
+                      <p className="fade-up tablet:leading-[50px] laptop:leading-[70px] hidden laptop:block">
+                        Thoughts on how design<br />will shape our future
                       </p>
                     </div>
 
