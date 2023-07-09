@@ -120,7 +120,6 @@ function KotakNet() {
                     hasBottomBorder={true}
                     backgroundColor={'background'}
                   />
-                  <Sections.Sec10 />
                   <FooterScrollable css={"bg-black"} />
                 </div>
               </Section>

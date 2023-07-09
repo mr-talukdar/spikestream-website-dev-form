@@ -70,7 +70,7 @@ function FeaturedTemplate(props) {
             <div className="text-sm tablet:text-base laptop:text-xl fade-up">
               Featured Work
             </div>
-            <div className="mt-2 tablet:mt-8 font-light text-3xl tablet:text-5xl laptop:text-7xl fade-up">
+            <div className="mt-2 tablet:mt-8 font-light text-3xl tablet:text-6xl fade-up">
               {titleLines.map((line, index) => (
                 <div key={index}>{line}</div>
               ))}

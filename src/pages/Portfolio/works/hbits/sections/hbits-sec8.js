@@ -41,17 +41,13 @@ function HbitsSec8() {
                             <img src={HBITS_IMAGES.social6} alt={HBITS_IMAGES.social6} className='object-contain w-full fade-up' />
                             <img src={HBITS_IMAGES.social7} alt={HBITS_IMAGES.social7} className='object-contain w-full fade-up' />
                         </div>
-                        <div className="mt-20 w-full flex flex-col items-center">
-                            <div className="font-medium text-base fade-up cursor-pointer">Visit Website</div>
-                        </div>
-
-                        <PrevNext
-                            navigate={navigate}
-                            nextWork="/works/iqvia"
-                            css="px-4 tablet:px-12  laptop:px-28 py-12 bg-black"
-                        />
                     </div>
                 </div>
+                <PrevNext
+                    navigate={navigate}
+                    nextWork="/works/kotak-loan"
+                    css="px-4 tablet:px-12  laptop:px-28 mt-24 bg-black"
+                />
             </div>
         </div>
     )

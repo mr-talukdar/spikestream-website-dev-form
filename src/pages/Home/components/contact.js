@@ -30,7 +30,7 @@ function Contact() {
                         Want To Design
                         <br /> An Impact?
                     </div>
-                    <div className="flex flex-col laptop:flex-row laptop:mb-0 justify-between laptop:mt-8">
+                    <div className="flex flex-col laptop:flex-row laptop:mb-0 laptop:mt-8">
                         <div className="basis-1/2 h-1/2 laptop:h-full flex flex-col laptop:justify-start">
                             <div className="smallphone:text-sm text-base text-accent fade-up">
                                 Start Here
@@ -79,9 +79,9 @@ function Contact() {
                             <div className="smallphone:mt-0 mt-4 laptop:mt-0 smallphone:text-sm tablet:text-lg fade-up">
                                 Studio Address
                             </div>
-                            <div className="mt-6 smallphone:text-sm text-subtle tablet:text-lg tablet:w-3/4 laptop:mb-8 fade-up">
-                                Spike Stream, B-304, Swapnalok CHS LTD,
-                                <br /> Off Filmcity Road, India, Mumbai - 400097
+                            <div className="mt-6 smallphone:text-sm text-subtle tablet:text-lg laptop:mb-8 fade-up">
+                                Spike Stream, B-304, Swapnalok CHS LTD,<br/>
+                                Off Filmcity Road, India, Mumbai - 400097
                             </div>
                         </div>
                     </div>

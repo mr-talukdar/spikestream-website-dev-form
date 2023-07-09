@@ -11,7 +11,7 @@ function Sec6(props) {
             <div id={props.id}>
                 <PrevNext
                     navigate={navigate}
-                    nextWork="/works/ketobalanced"
+                    nextWork="/works/iqvia"
                     css="px-4 tablet:px-12  laptop:px-28 py-12 bg-black"
                 />
             </div>

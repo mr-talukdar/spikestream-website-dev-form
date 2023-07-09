@@ -61,7 +61,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                             </div>
                         </div>
                         <div className="basis-1/2 mac:basis-2/3 laptop:flex laptop:flex-col laptop:justify-end mac:justify-center">
-                            <div className="font-medium text-accent text-lg">
+                            <div className="laptop:mt-12 font-medium text-accent text-lg">
                                 Contact
                             </div>
                             <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-4 tablet:gap-8">
@@ -111,7 +111,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                 <div className="hidden laptop:block ">
                                     <div className="mt-8">Studio Address</div>
                                     <div className="mt-4 text-subtle">
-                                        Spike Stream, B-304, Swapnalok CHS LTD,
+                                        Spike Stream, B-304, Swapnalok CHS LTD,<br/>
                                         Off Filmcity Road, India, Mumbai -
                                         400097.
                                     </div>
