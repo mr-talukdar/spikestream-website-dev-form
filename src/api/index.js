@@ -32,14 +32,14 @@ export const SINGLE_BLOG_QUERY = (id) => gql`
 `
 export const GET_NEXT_BLOG = (id) => gql`
 {
-  blogDatas(after: "${ id }") {
+  blogDatas(after: "${ id }", orderBy: publishedAt_DESC) {
     id
   }
 }
 `
 export const GET_PREVIOUS_BLOG = (id) => gql`
 {
-  blogDatas(before: "${ id }") {
+  blogDatas(before: "${ id }", orderBy: publishedAt_DESC) {
     id
   }
 }
