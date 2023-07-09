@@ -1,5 +1,5 @@
 import InputField from "./components/inputField";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Oval } from 'react-loader-spinner'
 import emailjs from "@emailjs/browser";
 import { PORTFOLIO_IMAGES } from '@images';
@@ -26,6 +26,12 @@ const Form = ({ open, setOpen }) => {
   const SetMessage = (value) => {
     setMessage(value);
   };
+
+  useEffect(() => {
+    setSending(false);
+    setDataSent(false);
+    setSendStatus(false);
+  }, [])
 
 
   const resetForm = () => {
@@ -111,7 +117,7 @@ const Form = ({ open, setOpen }) => {
           <div className="mt-12 font-graphik font-light text-2xl tablet:text-[70px] text-center">Sorry, something went wrong</div>
           <div
             onClick={resetForm}
-            className="mt-12 bg-accent rounded-full w-36 h-10 laptop:mt-8 laptop:w-40 laptop:h-12 flex justify-center items-center text-black font-graphik cursor-pointer"
+            className="mt-12 bg-accent rounded-full w-36 h-10 laptop:mt-20 laptop:w-40 laptop:h-12 flex justify-center items-center text-black font-graphik cursor-pointer"
           >
             Retry
           </div>

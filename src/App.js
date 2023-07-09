@@ -12,7 +12,7 @@ function App() {
             <GlobalStyles />
             <Routes>
                 <Route path="/" element={<Pages.Home />} />
-
+                <Route path="/privacy-policy" element={<Pages.Privacy />} />
                 <Route path="/works">
                     <Route index element={<Pages.Portfolio />} />
                     <Route path="ketobalanced" element={<Pages.Keto />} />
