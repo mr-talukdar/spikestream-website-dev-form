@@ -38,7 +38,7 @@ export default function SectionFive({ scrollY }) {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{ duration: 2, delay: 0.5 }}
+                        transition={{ duration: 2, delay: 0.3 }}
                         variants={{
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 },
@@ -52,7 +52,7 @@ export default function SectionFive({ scrollY }) {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{ duration: 2, delay: 1 }}
+                        transition={{ duration: 2, delay: 0.7 }}
                         variants={{
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 },
