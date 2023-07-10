@@ -5,7 +5,7 @@ import SectionTwo from "@components/about/section-two"
 import SectionThree from "@components/about/section-three"
 import { Header } from "@components"
 import Menu from "../Menu"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useScroll } from "framer-motion"
 import SectionFour from "@components/about/section-four"
 import SectionFive from "@components/about/section-five"
@@ -15,6 +15,10 @@ import SectionSeven from "@components/about/section-seven"
 export default function AboutPage() {
     const [menuOpen, setMenuOpen] = useState(false)
     const { scrollY } = useScroll()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className={css.root}>

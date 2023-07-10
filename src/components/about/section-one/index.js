@@ -36,7 +36,7 @@ export default function SectionOne({ scrollY }) {
                     <motion.h1
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 4, delay: 0.5 }}
+                        transition={{ duration: 4, delay: 0.75 }}
                         className={css.heading}
                     >
                         Hello!
@@ -44,7 +44,7 @@ export default function SectionOne({ scrollY }) {
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 4, delay: 1.2 }}
+                        transition={{ duration: 4, delay: 1.45 }}
                         className={css.text}
                     >
                         We are proficient thinkers and engineers who aspire for

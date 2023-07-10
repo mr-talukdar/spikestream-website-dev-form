@@ -23,7 +23,7 @@ export default function SectionFive({ scrollY }) {
     const splashWidthScrollValueMobile = useTransform(
         splashTrigger.scrollYProgress,
         [0, 1],
-        ["-400px", "1000px"]
+        ["-600px", "600px"]
     )
 
     if (isMobile) {

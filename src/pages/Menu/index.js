@@ -10,11 +10,13 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
     return (
         <General.CanvasContainer isWideScreen={isWideScreen}>
             <nav
-                className={`menu fixed top-0 left-0 w-full p-10 laptop:px-56 z-30 h-screen smallphone:py-8 pt-16 laptop:py-32 bg-[#2C2C2C] transform delay-100 transition-all duration-[500ms] ${ menuOpen
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 translate-x-full"
-                    } ${ isWideScreen ? "max-w-[1920px] mx-auto left-0 right-0" : ""
-                    }`}
+                className={`menu fixed top-0 left-0 w-full p-10 laptop:px-56 z-30 h-screen smallphone:py-8 pt-16 laptop:py-32 bg-[#2C2C2C] transform delay-100 transition-all duration-[500ms] ${
+                    menuOpen
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 translate-x-full"
+                } ${
+                    isWideScreen ? "max-w-[1920px] mx-auto left-0 right-0" : ""
+                }`}
             >
                 <div className="h-full smallphone:pb-16 pb-28 tablet:pb-0 pt-12 laptop:pb-0">
                     <div className="flex flex-col h-full">
@@ -82,7 +84,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                         </div>
                                         <div
                                             style={{
-                                                backgroundImage: `url(${ HOME_ICONS.Whatsapp })`,
+                                                backgroundImage: `url(${HOME_ICONS.Whatsapp})`,
                                             }}
                                             className="h-6 w-8 bg-no-repeat ml-2 bg-center cursor-pointer"
                                             onClick={Utils.openWhatsappChat}
@@ -96,7 +98,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                         >
                                             <div
                                                 style={{
-                                                    backgroundImage: `url(${ HOME_ICONS.Call })`,
+                                                    backgroundImage: `url(${HOME_ICONS.Call})`,
                                                 }}
                                                 className="h-5 w-5 bg-no-repeat"
                                             ></div>
@@ -109,8 +111,12 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                 <div className="hidden laptop:block laptop:col-span-3 ">
                                     <div className="w-full flex flex-col items-center">
                                         <div className="mt-8 text-subtle">
-                                            <div className="mb-4 text-white">Studio Address</div>
-                                            Spike Stream, B-304, Swapnalok CHS LTD,<br />
+                                            <div className="mb-4 text-white">
+                                                Studio Address
+                                            </div>
+                                            Spike Stream, B-304, Swapnalok CHS
+                                            LTD,
+                                            <br />
                                             Off Filmcity Road, India, Mumbai -
                                             400097.
                                         </div>
