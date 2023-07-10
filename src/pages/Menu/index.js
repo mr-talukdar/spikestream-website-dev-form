@@ -19,7 +19,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                 <div className="h-full smallphone:pb-16 pb-28 tablet:pb-0 pt-12 laptop:pb-0">
                     <div className="flex flex-col h-full">
                         <div className="basis-1/2 font-light smallphone:text-3xl text-4xl laptop:text-7xl flex flex-col laptop:justify-center mac:justify-end">
-                            <div className="laptop:mb-20 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 smallphone:gap-2 gap-4 tablet:gap-8">
+                            <div className="laptop:mb-20 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 tablet:gap-8">
                                 <Link
                                     to="/"
                                     className="nav-link group transition duration-300 hover:text-accent"

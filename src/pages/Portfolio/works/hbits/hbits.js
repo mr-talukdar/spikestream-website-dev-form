@@ -48,6 +48,7 @@ function Hbits() {
                 <div className="w-full">
                   <Components.IntroPage
                     id="hbitssec1"
+                    width="1/4"
                     rect={body ? body.rect : null}
                     navigate={navigate}
                     title='hBits'
