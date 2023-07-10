@@ -10,7 +10,8 @@ export default function SectionSeven() {
             <div className="about-contact bg-black h-full px-10  smallphone:pt-20 smallphone:pb-10 pt-28 pb-16 laptop:py-28 mac:py-32 ultrawide:py-36 tablet:px-28 laptop:px-44 laptop:pb-16">
                 <div className="h-full flex flex-col justify-between">
                     <div className="smallphone:text-2xl  font-light text-4xl tablet:text-6xl w-full tablet:w-4/5 laptop:w-2/5">
-                        Want To Design An Impact?
+                        Want To Design
+                        <br /> An Impact?
                     </div>
                     <div className="flex flex-col laptop:flex-row laptop:mb-0 justify-between laptop:mt-8">
                         <div className="basis-1/2 h-1/2 laptop:h-full flex flex-col laptop:justify-start">
