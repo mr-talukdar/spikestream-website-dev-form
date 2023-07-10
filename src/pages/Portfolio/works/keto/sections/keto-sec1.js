@@ -3,8 +3,8 @@ import { KETO_IMAGES, VIDEOS } from "@images";
 
 function Intro(props) {
     return (
-        <>
-            <div className="w-full laptop:w-1/2 h-full">
+        <div className="w-full flex justify-center">
+            <div className="w-full laptop:w-[350px] h-full">
                 <div className="w-full h-full flex justify-center items-center fade-up">
                     <div
                         className="absolute bg-mobile-border bg-contain bg-no-repeat bg-center flex justify-center items-center
@@ -37,19 +37,19 @@ function Intro(props) {
                 </div>
             </div>
             <div className="hidden laptop:block laptop:w-1/2 h-full">
-                <div className="flex flex-col h-full justify-between py-4 mac:py-0">
-                    <div className="fade-up w-full h-[200px] mac:h-[180px]">
+                <div className="flex flex-col h-full justify-center py-4 mac:py-0 gap-y-3">
+                    <div className="fade-up w-full h-[180px]">
                         <img src={KETO_IMAGES.weight} alt={KETO_IMAGES.weight} className='object-contain w-fit h-full' />
                     </div>
-                    <div className="fade-up w-fit h-[200px] mac:h-[180px]">
+                    <div className="fade-up w-fit h-[180px]">
                         <img src={KETO_IMAGES.mood} alt={KETO_IMAGES.mood} className='object-contain w-full h-full' />
                     </div>
-                    <div className="fade-up w-fit h-[200px] mac:h-[180px]">
+                    <div className="fade-up w-fit h-[180px]">
                         <img src={KETO_IMAGES.step} alt={KETO_IMAGES.step} className='object-contain w-full h-full' />
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
