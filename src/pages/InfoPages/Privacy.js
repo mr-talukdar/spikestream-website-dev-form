@@ -1,8 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Menu from "../Menu";
-import { General, Header, Footer } from "@components";
+import { General, Header } from "@components";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { BLOG_IMAGES } from '@images';
+import { useNavigate } from 'react-router-dom';
+
 function Privacy() {
+    const navigate = useNavigate();
     const containerRef = useRef(null);
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -13,6 +17,10 @@ function Privacy() {
             document.body.style.overflow = "auto";
         }
     }, [menuOpen]);
+
+    const returnToPrevPage = () => {
+        navigate(-1);
+    }
 
     return (
         <>
@@ -30,7 +38,11 @@ function Privacy() {
                         <General.CanvasContainer isWideScreen={false}>
                             <div className="bg-[#2C2C2C] w-screen min-h-screen">
                                 <div className="px-10 py-20 laptop:py-20 laptop:px-28">
-                                    <div className="font-graphik font-light text-3xl laptop:text-5xl">
+                                    <div className='flex flex-row items-center cursor-pointer' onClick={returnToPrevPage}>
+                                        <img src={BLOG_IMAGES.Prev} alt={BLOG_IMAGES.Prev} className='w-[7px] h-[12px] object-contain mr-[10px]' />
+                                        <div className='text-accent font-light text-base'>Back</div>
+                                    </div>
+                                    <div className="mt-8 font-graphik font-light text-3xl laptop:text-5xl">
                                         Privacy Policy
                                     </div>
 
@@ -113,11 +125,7 @@ function Privacy() {
                                     </div>
 
                                     <footer className="mt-20">
-                                        <div className='flex justify-between items-center text-subtle font-normal text-sm tablet:text-base'>
-                                            <div
-                                                className="cursor-pointer">
-                                                Privacy Policy
-                                            </div>
+                                        <div className='flex justify-end items-center text-subtle font-normal text-sm tablet:text-base'>
                                             <div className="hidden tablet:block">&copy;2023 Spike Stream. All Rights Reserved</div>
                                             <div className="tablet:hidden">&copy;2023 Spike Stream</div>
                                         </div>

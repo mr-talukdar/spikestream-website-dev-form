@@ -38,10 +38,10 @@ function Principles() {
             <div className="px-10 pt-16 tablet:px-28 laptop:px-44 text-base laptop:text-xl intro-section-header text-accent fade-up">Our Guiding Principles</div>
             <div className="px-10 tablet:px-28 laptop:px-44 desktop:flex desktop:flex-col">
                 <PrinciplesTemplate icon={HOME_ICONS.Heart}
-                    identifier='principle-heart' title='Empathy is the only way forward' body='We believe that empathy lies at the heart of every thriving business. Your customers will not engage unless your product or experience understands their desires, motivations, needs, and expectations.' />
+                    identifier='principle-heart' title='Empathy is the\nonly way forward' body='We believe that empathy lies at the heart of every thriving business. Your customers will not engage unless your product or experience understands their desires, motivations, needs, and expectations.' />
 
                 <PrinciplesTemplate icon={HOME_ICONS.Brain}
-                    identifier='principle-brain' title='Experiences do not take place on screens' body='It’s not about the stylish animations or cool transitions on the user interface or a visually stunning design. What matters is whether people can use it smoothly and accomplish their tasks with ease, as experiences occur not on a screen but in the mind.' />
+                    identifier='principle-brain' title='Experiences do not\ntake place on screens' body='It’s not about the stylish animations or cool transitions on the user interface or a visually stunning design. What matters is whether people can use it smoothly and accomplish their tasks with ease, as experiences occur not on a screen but in the mind.' />
 
                 <PrinciplesTemplate icon={HOME_ICONS.Finger}
                     identifier='principle-finger' title='People are not numbers' body='Numbers do help to understand where your business stands. But to establish a deeper connection, look into their emotions, personalities, and attitudes. Numbers do tell how many people have invested in your product, but they don’t indicate if they are happy with it.' />

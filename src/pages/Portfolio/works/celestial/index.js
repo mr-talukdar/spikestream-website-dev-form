@@ -19,8 +19,6 @@ function Celestial() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { state: body } = useLocation();
 
-  const isWideScreen = window.innerWidth > 1920;
-
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -54,7 +52,7 @@ function Celestial() {
                     id="celestialsec1"
                     rect={body ? body.rect : null}
                     navigate={navigate}
-                    title='Celestial Mountains'
+                    title='Celestial\nMountains'
                     subtitle='Concept Prototype'
                     visualComponent={Sections.Sec1}
                     cover={CELESTIAL_IMAGES.cover}

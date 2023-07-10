@@ -35,8 +35,6 @@ const Footer = (props) => {
             <div className={`${ props && !props.skipAnim ? 'fade-up' : '' } flex justify-between items-center text-subtle font-normal text-sm tablet:text-base`}>
                 <Link
                     to="/privacy-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="cursor-pointer">
                     Terms & Policies
                 </Link>

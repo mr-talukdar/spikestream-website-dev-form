@@ -70,7 +70,6 @@ function KetoSec7() {
                     </div>
                 </div>
                 <div className="mb-20 basis-1/12 w-full h-full flex flex-col items-center ">
-                    <div className="font-medium text-sm fade-up">Download the App</div>
                     <div className="mt-6 flex flex-row gap-6">
                         <img src={KETO_IMAGES.store_apple} alt={KETO_IMAGES.store_apple} className='object-contain fade-up cursor-pointer w-12' />
                         <img src={KETO_IMAGES.store_google} alt={KETO_IMAGES.store_google} className='object-contain fade-up cursor-pointer w-12' />

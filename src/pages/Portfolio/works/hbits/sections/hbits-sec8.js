@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { HBITS_IMAGES, BLOG_IMAGES } from "@images";
+import { HBITS_IMAGES } from "@images";
 
 import useOnScreen from "@hooks/useOnScreen";
 import * as AnimConfig from '@helpers/animConfig'
@@ -21,14 +21,14 @@ function HbitsSec8() {
     useEffect(() => {
         if (isRevealed) {
             gsap.to(
-                '#hbitssec10 .fade-up',
+                '#hbitssec12 .fade-up',
                 AnimConfig.fadeUpConfig
             );
         }
     }, [isRevealed]);
     return (
         <div ref={sectionRef} data-scroll-section>
-            <div id="hbitssec10">
+            <div id="hbitssec12">
                 <div className='bg-black py-12 min-h-screen w-screen flex'>
                     <div className='mx-auto flex flex-col items-center'>
                         <div className="text-base tablet:text-lg text-white text-center fade-up mt-8">Social & Display</div>
@@ -41,17 +41,13 @@ function HbitsSec8() {
                             <img src={HBITS_IMAGES.social6} alt={HBITS_IMAGES.social6} className='object-contain w-full fade-up' />
                             <img src={HBITS_IMAGES.social7} alt={HBITS_IMAGES.social7} className='object-contain w-full fade-up' />
                         </div>
-                        <div className="mt-20 w-full flex flex-col items-center">
-                            <div className="font-medium text-base fade-up cursor-pointer">Visit Website</div>
-                        </div>
-
-                        <PrevNext
-                            navigate={navigate}
-                            nextWork="/works/iqvia"
-                            css="px-4 tablet:px-12  laptop:px-28 py-12 bg-black"
-                        />
                     </div>
                 </div>
+                <PrevNext
+                    navigate={navigate}
+                    nextWork="/works/kotakloans"
+                    css="px-4 tablet:px-12  laptop:px-28 mt-24 bg-black"
+                />
             </div>
         </div>
     )

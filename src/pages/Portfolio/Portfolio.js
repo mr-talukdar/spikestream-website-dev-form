@@ -36,6 +36,14 @@ function Portfolio() {
       route: "hbits",
     },
     {
+      cssIdentifier: "kotak-loan",
+      src: PORTFOLIO_IMAGES.KotakLoan,
+      projName: "Kotak Home Loans ",
+      projTopic: "UI Design (All Devices)",
+      isOnRequest: false,
+      route: "kotakloans",
+    },
+    {
       cssIdentifier: "iqvia",
       src: PORTFOLIO_IMAGES.iqvia,
       projName: "IQVIA",
@@ -81,14 +89,6 @@ function Portfolio() {
       projTopic: "Script, Screenplay & Copy",
       isOnRequest: false,
       route: "kotaknetbanking",
-    },
-    {
-      cssIdentifier: "kotak-loan",
-      src: PORTFOLIO_IMAGES.KotakLoan,
-      projName: "Kotak Home Loans ",
-      projTopic: "UI Design (All Devices)",
-      isOnRequest: false,
-      route: "kotakloans",
     },
     {
       cssIdentifier: "yippee",

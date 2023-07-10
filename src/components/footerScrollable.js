@@ -35,8 +35,6 @@ const FooterScrollable = (props) => {
             <div className={`${ props && !props.skipAnim ? 'fade-up' : '' } py-10 px-6 tablet:px-12 laptop:px-28 flex justify-between items-center text-subtle font-normal text-sm tablet:text-base`}>
                 <Link
                     to="/privacy-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="cursor-pointer">
                     Terms & Policies
                 </Link>

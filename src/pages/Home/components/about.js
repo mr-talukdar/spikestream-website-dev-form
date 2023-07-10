@@ -27,7 +27,7 @@ function About({ navigate }) {
     return (
         <General.Container ref={sectionRef} data-scroll-section>
             <div
-                style={{ backgroundImage: `url(${HOME_BG.About})` }}
+                style={{ backgroundImage: `url(${ HOME_BG.About })` }}
                 className="about h-full w-full object-cover justify-center items-center px-10 py-5 tablet:px-28 tablet:py-20 laptop:px-44"
             >
                 <div className="flex h-full w-full flex flex-col laptop:flex-row justify-center items-center">
@@ -38,13 +38,14 @@ function About({ navigate }) {
                         >
                             About Spikestream
                         </div>
-                        <div className="mt-3  laptop:mt-8 sm:mt-3 font-light text-3xl laptop:text-6xl leading-loose fade-up">
+                        <div className="mt-3 laptop:mt-8 sm:mt-3 font-light text-3xl laptop:text-6xl fade-up">
                             <span className="text-accent">Propelling </span>
                             Brands
-                            <br />
+                        </div>
+                        <div className="font-light text-3xl laptop:text-6xl fade-up mt-1 tablet:mt-2">
                             into the Future
                         </div>
-                        <div className="w-full mt-4 laptop:mt-8 text-base text-subtle fade-up">
+                        <div className="w-full mt-4 laptop:mt-8 text-base text-subtle fade-up hidden tablet:block">
                             We are a team of passionate design and technology
                             enthusiasts <br />
                             who continuously push the boundaries of innovation,
@@ -52,6 +53,12 @@ function About({ navigate }) {
                             <br />
                             creativity with technology to create enchanting and
                             <br /> extraordinary experiences.
+                        </div>
+                        <div className="w-full mt-4 laptop:mt-8 text-base text-subtle fade-up tablet:hidden">
+                            We are a team of passionate design and technology
+                            enthusiasts who continuously push the boundaries of innovation,
+                            merging creativity with technology to create enchanting and
+                            extraordinary experiences.
                         </div>
                         <div
                             className="mt-8 laptop: mt-4 flex flex-row items-center fade-up cursor-pointer"
