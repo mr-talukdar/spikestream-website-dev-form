@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { HBITS_IMAGES, BLOG_IMAGES } from "@images";
+import { HBITS_IMAGES } from "@images";
 
 import useOnScreen from "@hooks/useOnScreen";
 import * as AnimConfig from '@helpers/animConfig'

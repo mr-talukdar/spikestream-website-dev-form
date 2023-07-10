@@ -19,8 +19,6 @@ function Celestial() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { state: body } = useLocation();
 
-  const isWideScreen = window.innerWidth > 1920;
-
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";

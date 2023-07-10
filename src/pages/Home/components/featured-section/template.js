@@ -44,16 +44,30 @@ function FeaturedTemplate(props) {
           <div className="basis-2/3 laptop:basis-1/2 flex items-center justify-center order-1 laptop:order-2 fade-up">
             {
               props.isVideo ?
-                <div className="w-full h-full flex justify-center items-center laptop:p-8 mac:p-20 ultrawide:p-32">
+                <div className="w-full h-full flex justify-center items-center laptop:p-4 mac:p-16 ultrawide:p-28">
                   <div
-                    className="bg-mobile-border bg-contain bg-no-repeat bg-center w-full h-full"
+                    className="absolute bg-mobile-border bg-contain bg-no-repeat bg-center flex justify-center items-center
+                                    smallphone:w-[220px] smallphone:h-[440px]
+                                    w-[280px] h-[550px]
+                                    tablet:w-[320px] tablet:h-[630px]
+                                    mac:w-[350px] mac:h-[700px]
+                                    "
                   >
-                    <div className="absolute inset-0 flex justify-center items-center p-4 tablet:p-6 laptop:p-16 mac:p-28 ultrawide:p-44">
+                    <div className="relative flex justify-center items-center
+                                    smallphone:w-[180px] smallphone:h-[360px]
+                                    w-[230px] h-[450px] 
+                                    tablet:w-[260px] tablet:h-[530px]
+                                    mac:w-[290px] mac:h-[655px]
+                                    ">
                       <video
-                        className="object-contain w-fit h-full rounded-xl"
+                        className="object-contain w-auto h-auto rounded-xl"
                         ref={videoRef}
                         src={props.videoUrl}
-                        loop muted preload="auto" autoPlay playsInline={true}
+                        loop
+                        muted
+                        preload="auto"
+                        autoPlay
+                        playsInline={true}
                       />
                     </div>
                   </div>

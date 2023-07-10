@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import { General } from "@components";
@@ -59,8 +60,8 @@ function IntroPage(props) {
                                 </p>
                                 <p className="mt-2 tablet:mt-6  fade-up reveal-clip-anim text-base mac:text-lg font-medium">{props.subtitle}</p>
                             </div>
-                            <div className="w-full laptop:w-2/3 max-w-[650px] h-full flex flex-col tablet:justify-center">
-                                <div className="w-fit h-full max-h-[800px] flex flex-row laptop:gap-x-6 mx-auto">
+                            <div className="w-full laptop:w-2/3 h-full flex flex-col tablet:justify-center">
+                                <div className="w-full h-full max-h-[800px] flex flex-row laptop:gap-x-2 mx-auto">
                                     <props.visualComponent
                                         videoRef={videoRef}
                                     />

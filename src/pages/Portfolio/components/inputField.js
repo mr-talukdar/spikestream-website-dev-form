@@ -8,7 +8,7 @@ const InputField = (props) => {
       <div className="py-4 w-full">
         <textarea
           rows="1"
-          className="border-0 pb-4 bg-transparent border-b border-[#B1B1B1] w-full placeholder-white focus:outline-none"
+          className="border-0 pb-4 bg-transparent border-b border-[#B1B1B1] w-full placeholder-white focus:outline-none placeholder-gray-100"
           placeholder={props.label}
           onChange={handleChange}
           value={props.value}

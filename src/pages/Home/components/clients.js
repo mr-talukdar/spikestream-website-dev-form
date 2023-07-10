@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import React, { useEffect, useRef, useState } from "react";
-import { General } from "@components";
-import { HOME_BG, HOME_ICONS } from "@images";
+import { HOME_BG } from "@images";
 
 import API from '@api'
 

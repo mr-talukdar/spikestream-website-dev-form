@@ -77,7 +77,8 @@ function Blogs({ navigate }) {
       >
         <div>
           <div className="text-base laptop:text-xl fade-up">Blogs</div>
-          <div className="mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">Thoughts on how design will shape our future</div>
+          <div className="hidden laptop:block mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">Thoughts on how design<br />will shape our future</div>
+          <div className="laptop:hidden mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">Thoughts on how design will shape our future</div>
 
           <div className="mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 flex flex-row flex-wrap justify-center laptop:justify-start gap-6 tablet:gap-0">
             {
