@@ -45,7 +45,7 @@ function HbitsSec8() {
                 </div>
                 <PrevNext
                     navigate={navigate}
-                    nextWork="/works/kotak-loan"
+                    nextWork="/works/kotakloans"
                     css="px-4 tablet:px-12  laptop:px-28 mt-24 bg-black"
                 />
             </div>

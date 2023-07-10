@@ -54,7 +54,7 @@ function Celestial() {
                     id="celestialsec1"
                     rect={body ? body.rect : null}
                     navigate={navigate}
-                    title='Celestial Mountains'
+                    title='Celestial\nMountains'
                     subtitle='Concept Prototype'
                     visualComponent={Sections.Sec1}
                     cover={CELESTIAL_IMAGES.cover}

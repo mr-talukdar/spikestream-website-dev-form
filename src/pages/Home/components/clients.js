@@ -74,7 +74,7 @@ function Client() {
             >
                 <div className="text-base laptop:text-xl fade-up">Clientele</div>
 
-                <div className="mt-4 mac:mt-12 text-5xl font-light fade-up">Trusted by</div>
+                <div className="mt-4 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">Trusted by</div>
 
                 <div className="mt-8 mac:mt-12 ultrawide:mt-20 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 mac:gap-8">
                     {clientData.map(d => <ClientItem key={d.id} data={d} />)}
