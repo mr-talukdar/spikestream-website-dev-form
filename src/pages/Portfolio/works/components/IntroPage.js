@@ -60,7 +60,7 @@ function IntroPage(props) {
                                 <p className="mt-2 tablet:mt-6  fade-up reveal-clip-anim text-base mac:text-lg font-medium">{props.subtitle}</p>
                             </div>
                             <div className="w-full laptop:w-2/3 max-w-[650px] h-full flex flex-col tablet:justify-center">
-                                <div className="w-full h-full max-h-[800px] flex flex-row laptop:gap-x-6">
+                                <div className="w-fit h-full max-h-[800px] flex flex-row laptop:gap-x-6 mx-auto">
                                     <props.visualComponent
                                         videoRef={videoRef}
                                     />
