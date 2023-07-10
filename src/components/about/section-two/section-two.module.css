@@ -1,6 +1,6 @@
 .root {
-    height: 150vh;
-    min-height: 2160px;
+    height: 120vh;
+    min-height: 20px;
     position: relative;
     text-align: center;
     line-height: 900%;
@@ -66,7 +66,7 @@
 
 .textTrigger {
     position: absolute;
-    top: 100vh;
+    top: 50vh;
     height: 150vh;
     min-height: 2160px;
 }

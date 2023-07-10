@@ -1,6 +1,6 @@
 .root {
     min-height: 2160px;
-    height: 200vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     scroll-snap-align: center;

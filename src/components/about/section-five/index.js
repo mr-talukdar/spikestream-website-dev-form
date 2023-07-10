@@ -38,7 +38,7 @@ export default function SectionFive({ scrollY }) {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{ duration: 2, delay: 1 }}
+                        transition={{ duration: 2, delay: 0.5 }}
                         variants={{
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 },
@@ -52,7 +52,7 @@ export default function SectionFive({ scrollY }) {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{ duration: 2, delay: 2 }}
+                        transition={{ duration: 2, delay: 1 }}
                         variants={{
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 },
@@ -64,7 +64,6 @@ export default function SectionFive({ scrollY }) {
 
                     <div className={css.waterbg} />
                 </motion.div>
-
                 <div className={css.waterbg2} />
             </div>
 

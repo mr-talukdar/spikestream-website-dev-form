@@ -45,6 +45,7 @@
     background-repeat: no-repeat;
     z-index: -1;
     opacity: 0.25;
+    height: 100%;
 }
 
 .waterbg2 {
@@ -60,6 +61,7 @@
     z-index: -1;
     opacity: 1;
     margin: auto;
+    height: 100%;
 }
 
 .startTrigger {
