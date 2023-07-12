@@ -36,7 +36,7 @@ function About({ navigate }) {
                             className="text-base laptop:text-xl fade-up"
                             ref={revealRef}
                         >
-                            About Spikestream
+                            About Spike Stream
                         </div>
                         <div className="mt-3 laptop:mt-8 sm:mt-3 font-light text-3xl laptop:text-6xl fade-up">
                             <span className="text-accent">Propelling </span>

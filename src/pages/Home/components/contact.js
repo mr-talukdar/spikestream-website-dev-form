@@ -75,11 +75,9 @@ function Contact() {
                                 ></div>
                             </div>
                         </div>
-                        <div className="mt-16 laptop:mt-0 laptop:h-full flex flex-col laptop:justify-start">
-                            <div className="smallphone:mt-0 mt-4 laptop:mt-0 smallphone:text-sm tablet:text-lg fade-up">
-                                Studio Address
-                            </div>
-                            <div className="mt-6 smallphone:text-sm text-subtle tablet:text-lg laptop:mb-8 fade-up">
+                        <div className="mt-16 laptop:mt-0 laptop:h-full flex flex-col laptop:justify-start items-start laptop:items-end w-full">
+                            <div className="smallphone:mt-0 mt-4 laptop:mt-0 smallphone:text-sm text-subtle tablet:text-lg laptop:mb-8 fade-up">
+                                <div className="text-white smallphone:text-sm tablet:text-lg ">Studio Address</div><br />
                                 Spike Stream, B-304, Swapnalok CHS LTD,<br />
                                 Off Filmcity Road, India, Mumbai - 400097
                             </div>

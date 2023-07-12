@@ -1,11 +1,14 @@
 import InputField from "./components/inputField";
+import MobileInputField from "./components/mobileInputField";
 import { useEffect, useState } from "react";
 import { Oval } from 'react-loader-spinner'
 import emailjs from "@emailjs/browser";
 import { PORTFOLIO_IMAGES } from '@images';
 const Form = ({ open, setOpen }) => {
   const [name, setName] = useState("");
+
   const [number, setNumber] = useState("");
+
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -126,7 +129,7 @@ const Form = ({ open, setOpen }) => {
     }
     return (
       <div className="font-graphik">
-        <div className="w-11/12 font-light smallphone:text-2xl text-3xl laptop:text-6xl laptop:leading-regular">
+        <div className="w-11/12 font-light text-3xl laptop:text-6xl laptop:leading-regular">
           Would you like to see all the exciting work we have accomplished?
         </div>
         <div className="mt-4 laptop:mt-12 text-accent smallphone:w-2/3 w-5/6 smallphone:text-sm text-base laptop:text-lg">
@@ -148,11 +151,9 @@ const Form = ({ open, setOpen }) => {
                 type="email"
                 value={email}
               />
-              <InputField
-                label="Mobile No.    +91"
-                OnChange={SetNumber}
-                type="number"
+              <MobileInputField
                 value={number}
+                OnChange={SetNumber}
               />
             </div>
             <InputField

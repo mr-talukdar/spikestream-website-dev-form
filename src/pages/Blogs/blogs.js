@@ -114,18 +114,18 @@ function Blogs() {
                     <div
                       className={`mt-6 text-4xl laptop:text-6xl tablet:w-2/3 font-light`}
                     >
-                      <p className="fade-up tablet:leading-[50px] laptop:leading-[70px] laptop:hidden">
+                      <p className="fade-up text-3xl laptop:hidden">
                         Thoughts on how design will shape our future
                       </p>
 
-                      <p className="fade-up tablet:leading-[50px] laptop:leading-[70px] hidden laptop:block">
+                      <p className="fade-up text-6xl hidden laptop:block">
                         Thoughts on how design<br />will shape our future
                       </p>
                     </div>
 
                     <div
                       id="blogParent"
-                      className="blogsContainer mt-8 mac:pt-12 flex flex-row flex-wrap gap-6 tablet:gap-0"
+                      className="blogsContainer mt-8 laptop:mt-16 mac:pt-12 flex flex-row flex-wrap gap-6 tablet:gap-0"
                     >
                       {blogData.map((item) => {
                         return (
