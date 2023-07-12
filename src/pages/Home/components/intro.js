@@ -1,18 +1,21 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { General } from "@components"
 import { HOME_BG, HOME_ICONS } from "@images"
 import * as AnimConfig from "@helpers/animConfig"
 
 import gsap from "gsap"
 
-function Intro({ handleScrollToContact }) {
+function Intro() {
     const sectionRef = useRef()
+
+    const [battery, setbattery] = useState("true")
 
     const videoRef = useRef(null)
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.play().catch(() => {
-                if (videoRef.current) videoRef.current.controls = false
+                setbattery("false")
+                videoRef.current.controls = true
             })
         }
     }, [])
@@ -43,7 +46,7 @@ function Intro({ handleScrollToContact }) {
 
     return (
         <General.Container ref={sectionRef}>
-            <div className="intro h-full w-full">
+            <div className="intro fixed   h-full w-full">
                 <video
                     ref={videoRef}
                     className="absolute top-0 left-0 w-full h-full object-cover"

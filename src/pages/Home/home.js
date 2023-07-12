@@ -18,6 +18,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import { General, Header } from "@components"
 import { useNavigate } from "react-router-dom"
 import Utils from "@helpers/utils"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 const Section = styled.section`
     position: relative;
@@ -27,6 +28,13 @@ const Section = styled.section`
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false)
     const containerRef = useRef(null)
+
+    const bgRef = useRef(null)
+
+    // const { scrollY } = useScroll()
+
+    // const bgScroll = useTransform(scrollY, [0, 1], ["0%", "5%"])
+    // const dataScroll = useTransform(scrollY, [0, 1], ["0%", "30%"])
 
     const isWideScreen = window.innerWidth > Utils.ULTRAWIDE_WIDTH
 
@@ -45,21 +53,24 @@ export default function Home() {
     }, [])
 
     return (
-        <main data-scroll-container ref={containerRef}>
-            <General.CanvasContainer isWideScreen={isWideScreen}>
-                <Section className="font-graphik">
-                    <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                    <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                    <Intro />
+        <General.CanvasContainer isWideScreen={isWideScreen}>
+            <Section className="font-graphik">
+                <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+                <Intro />
+
+                <div className=" mt-[32rem]">
                     <About navigate={navigate} />
                     <Competencies navigate={navigate} />
                     <Featured navigate={navigate} />
                     <Principles navigate={navigate} />
                     <Blogs navigate={navigate} />
+
                     <Client navigate={navigate} />
                     <Contact navigate={navigate} />
-                </Section>
-            </General.CanvasContainer>
-        </main>
+                </div>
+            </Section>
+        </General.CanvasContainer>
     )
 }
