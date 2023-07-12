@@ -8,14 +8,13 @@ import gsap from "gsap"
 function Intro() {
     const sectionRef = useRef()
 
-    const [battery, setbattery] = useState("true")
+    const [batterySaverActive, setBatterySaverActive] = useState(false)
 
     const videoRef = useRef(null)
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.play().catch(() => {
-                setbattery("false")
-                videoRef.current.controls = true
+                setBatterySaverActive(true)
             })
         }
     }, [])
@@ -46,8 +45,12 @@ function Intro() {
 
     return (
         <General.Container ref={sectionRef}>
-            <div className="intro fixed   h-full w-full">
-                <video
+            <div className="intro fixed h-full w-full">
+                {batterySaverActive ? <img
+                    src={HOME_BG.Intro2}
+                    className="object-cover h-full w-full"
+                    alt="Flag"
+                /> : <video
                     ref={videoRef}
                     className="absolute top-0 left-0 w-full h-full object-cover"
                     loop
@@ -57,7 +60,7 @@ function Intro() {
                     playsInline={true}
                     src={HOME_BG.Intro}
                     type="video/mp4"
-                ></video>
+                ></video>}
                 <div className="absolute top-0 left-0 w-full h-full bg-black fade-out"></div>
                 <div className="absolute top-0 left-0 w-full h-full px-10 py-32 tablet:py-40 tablet:px-28 laptop:px-44 flex flex-col justify-end">
                     <div className="flex h-1/2 flex-col justify-end">
@@ -84,7 +87,7 @@ function Intro() {
                             >
                                 <div
                                     style={{
-                                        backgroundImage: `url(${HOME_ICONS.Call})`,
+                                        backgroundImage: `url(${ HOME_ICONS.Call })`,
                                     }}
                                     className="h-5 w-5 bg-no-repeat"
                                 ></div>

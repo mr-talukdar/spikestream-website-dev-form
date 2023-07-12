@@ -1,5 +1,6 @@
 const HOME_BG = {
     Intro: require("./home/Intro.mp4"),
+    Intro2: require("./home/BG_Intro.png"),
     About: require("./home/BG_About_TrustedBy.png"),
     Featured_Keto: require("./home/BG_FW_Keto.png"),
     Featured_RealEstate: require("./home/BG_FW_RealEstate.png"),
