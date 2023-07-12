@@ -26,7 +26,7 @@ export default function SectionSeven() {
                                 >
                                     <div
                                         style={{
-                                            backgroundImage: `url(${HOME_ICONS.Call})`,
+                                            backgroundImage: `url(${ HOME_ICONS.Call })`,
                                         }}
                                         className="h-5 w-5 bg-no-repeat"
                                     ></div>
@@ -51,20 +51,18 @@ export default function SectionSeven() {
                                 </div>
                                 <div
                                     style={{
-                                        backgroundImage: `url(${HOME_ICONS.Whatsapp})`,
+                                        backgroundImage: `url(${ HOME_ICONS.Whatsapp })`,
                                     }}
                                     className="h-10 w-10 bg-no-repeat ml-1 bg-center cursor-pointer"
                                     onClick={Utils.openWhatsappChat}
                                 ></div>
                             </div>
                         </div>
-                        <div className="smallphone:mt-6 mt-16 laptop:mt-0 laptop:h-full flex flex-col laptop:justify-start">
-                            <div className="smallphone:mt-0 mt-4 laptop:mt-0 smallphone:text-sm tablet:text-lg">
-                                Studio Address
-                            </div>
-                            <div className="mt-6 smallphone:text-sm text-subtle tablet:text-lg tablet:w-3/4 laptop:mb-8">
-                                Spike Stream, B-304, Swapnalok CHS LTD, Off
-                                Filmcity Road, India, Mumbai - 400097
+                        <div className="mt-16 laptop:mt-0 laptop:h-full flex flex-col laptop:justify-start items-start laptop:items-end w-full">
+                            <div className="smallphone:mt-0 mt-4 laptop:mt-0 smallphone:text-sm text-subtle tablet:text-lg laptop:mb-8">
+                                <div className="text-white smallphone:text-sm tablet:text-lg ">Studio Address</div><br />
+                                Spike Stream, B-304, Swapnalok CHS LTD,<br />
+                                Off Filmcity Road, India, Mumbai - 400097
                             </div>
                         </div>
                     </div>
