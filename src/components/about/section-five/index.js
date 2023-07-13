@@ -23,8 +23,10 @@ export default function SectionFive({ scrollY }) {
     const splashWidthScrollValueMobile = useTransform(
         splashTrigger.scrollYProgress,
         [0, 1],
-        ["-600px", "600px"]
+        ["0%", "150%"]
     )
+
+    const waterRef = useRef(null)
 
     if (isMobile) {
         return (
@@ -33,6 +35,7 @@ export default function SectionFive({ scrollY }) {
 
                 <motion.div className={css.splashberg}>
                     <motion.img
+                        ref={waterRef}
                         src={splashIMG}
                         className={css.splash}
                         style={{ width: splashWidthScrollValueMobile }}

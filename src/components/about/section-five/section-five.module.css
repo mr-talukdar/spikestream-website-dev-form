@@ -85,7 +85,7 @@
 }
 
 .splash {
-    width: 200%;
+    width: 300%;
     z-index: 10;
     position: absolute;
     left: 0;
@@ -134,11 +134,12 @@
 
     .splash {
         bottom: -5%;
-        width: 900px;
+        width: 300%;
     }
 
     .splashberg {
-        height: 980px;
+        height: 1200px;
+        max-width: 2560px;
     }
 }
 
@@ -214,6 +215,10 @@
     }
 
     .splash {
-        bottom: -1%;
+        max-width: 400% !important;
+        position: absolute;
+        left: -200px;
+        right: -200px;
+        margin: auto;
     }
 }
