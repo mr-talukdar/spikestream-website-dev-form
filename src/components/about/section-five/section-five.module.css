@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 1000px;
+    padding-bottom: 424px;
     z-index: 10;
     gap: 50px;
     padding-top: 900px;
@@ -103,7 +103,7 @@
 
 .water {
     position: relative;
-    height: 2160px;
+    height: 1600px;
 }
 
 .iceberg {
@@ -123,10 +123,6 @@
 }
 
 @media only screen and (max-width: 1400px) {
-    .iceberg {
-        width: 1000px;
-    }
-
     .iceberg {
         width: 1000px;
         bottom: -780px;
@@ -210,8 +206,10 @@
 
 @media only screen and (max-width: 468px) {
     .iceberg {
-        width: 300px;
-        bottom: -220px;
+        width: 526px;
+        max-width: 200% !important;
+        bottom: -372px;
+        left: -70px;
     }
 
     .splash {
@@ -220,5 +218,10 @@
         left: -200px;
         right: -200px;
         margin: auto;
+    }
+
+    .text {
+        font-size: 20px;
+        padding-top: 20px;
     }
 }

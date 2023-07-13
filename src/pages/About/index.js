@@ -34,6 +34,7 @@ export default function AboutPage() {
             <SectionFour scrollY={scrollY} />
             <SectionFive scrollY={scrollY} />
             <SectionSix />
+
             <SectionSeven />
         </div>
     )

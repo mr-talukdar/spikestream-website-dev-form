@@ -1,10 +1,12 @@
 import { HOME_ICONS } from "@images"
 import { useNavigate } from "react-router-dom"
 
+import SectionSeven from "@components/about/section-seven"
+
 export default function SectionSix() {
     const navigate = useNavigate()
     return (
-        <div className="  w-full h-screen">
+        <div className="  w-full h-full">
             <div className="about-competencies h-full flex flex-col justify-between px-10 tablet:px-28  tablet:pb-20 pb-16 laptop:pb-12 mac:pb-24 laptop:px-44 bg-black">
                 <div>
                     <div className="text-base ultrawide:text-lg">

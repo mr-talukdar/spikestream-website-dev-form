@@ -23,7 +23,7 @@ export default function SectionFive({ scrollY }) {
     const splashWidthScrollValueMobile = useTransform(
         splashTrigger.scrollYProgress,
         [0, 1],
-        ["0%", "150%"]
+        ["0%", "200%"]
     )
 
     const waterRef = useRef(null)
