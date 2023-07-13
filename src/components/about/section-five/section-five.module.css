@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 424px;
+    padding-bottom: 274px;
     z-index: 10;
     gap: 50px;
     padding-top: 900px;
@@ -103,7 +103,7 @@
 
 .water {
     position: relative;
-    height: 1600px;
+    height: 1440px;
 }
 
 .iceberg {
