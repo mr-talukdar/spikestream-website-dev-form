@@ -9,7 +9,7 @@ const MobileInputField = (props) => {
         <div className="py-4 w-full">
             <div className="bg-transparent border-b border-[#B1B1B1] w-full h-full flex flex-row">
                 <PhoneInput
-                    country={'us'}
+                    country={'in'}
                     placeholder='Mobile Number'
                     value={props.value}
                     onChange={handleChange}
