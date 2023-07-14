@@ -92,7 +92,7 @@
 
 @media only screen and (max-width: 1279px) {
     .root {
-        height: 150vh;
+        height: 200vh;
         min-height: unset;
     }
 
@@ -103,6 +103,7 @@
     .heading {
         font-size: 37px;
         line-height: 50px;
+        z-index: 10;
     }
 
     .text {
@@ -137,6 +138,6 @@
 
 @media only screen and (max-width: 768px) {
     .lightTrigger {
-        bottom: -100px;
+        bottom: 300px;
     }
 }
