@@ -30,8 +30,8 @@ function Sec7() {
         <div ref={sectionRef} data-scroll-section>
             <div id="iqviasec13">
                 <div className='w-screen h-screen flex items-center'>
-                    <div className='h-full w-full flex justify-center bg-cover bg-center' style={{ backgroundImage: `url(${ IQVIA_IMAGES.download1 })` }}>
-                        <img src={IQVIA_IMAGES.download2} alt={IQVIA_IMAGES.download2} className='object-contain w-[700px] laptop:w-[1000px] fade-up' />
+                    <div className='h-full w-full flex justify-center bg-cover bg-center px-8' style={{ backgroundImage: `url(${ IQVIA_IMAGES.download1 })` }}>
+                        <img src={IQVIA_IMAGES.download2} alt={IQVIA_IMAGES.download2} className='object-contain w-full tablet:w-[700px] fade-up' />
                     </div>
                 </div>
                 <PrevNext
