@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { Helmet } from "react-helmet";
+import TagManager from 'react-gtm-module';
 
 import {
   ApolloClient,
@@ -13,10 +14,14 @@ import {
 
 import { onError } from "@apollo/client/link/error";
 
+const tagManagerArgs = {
+  gtmId: 'GTM-W8GLNRD'
+}
+TagManager.initialize(tagManagerArgs)
 const errorLink = onError(({ graphqlErrors, networkError }) => {
   if (graphqlErrors) {
     graphqlErrors.map(({ messages, location, path }) => {
-      alert(`Graphql error ${messages}`);
+      alert(`Graphql error ${ messages }`);
     });
   }
 });
