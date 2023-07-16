@@ -139,8 +139,8 @@ const Form = ({ open, setOpen }) => {
                 </div>
 
                 <div className="mt-4 laptop:mt-16">
-                    <form onSubmit={handleSubmit} className="flex-row">
-                        <div className="flex flex-col laptop:flex-row laptop:gap-8">
+                    <form onSubmit={handleSubmit} className="flex-row gap-10">
+                        <div className="flex flex-col laptop:flex-row laptop:gap-8 ">
                             <InputField
                                 label="Full Name"
                                 OnChange={SetName}
