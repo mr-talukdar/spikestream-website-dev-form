@@ -82,7 +82,7 @@ export default function Home() {
 
                 <Intro />
 
-                <div className=" mt-[2rem]">
+                <div className="md:mt-[2rem]">
                     <About navigate={navigate} />
                     <Competencies navigate={navigate} />
                     <Featured navigate={navigate} />
