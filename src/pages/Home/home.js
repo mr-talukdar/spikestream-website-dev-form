@@ -38,6 +38,8 @@ export default function Home() {
 
     const isWideScreen = window.innerWidth > Utils.ULTRAWIDE_WIDTH
 
+    const isMobile = window.innerWidth < 768
+
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -51,6 +53,26 @@ export default function Home() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+    if (isMobile) {
+        ;<General.CanvasContainer isWideScreen={isWideScreen}>
+            <Section className="font-graphik">
+                <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+                <Intro />
+
+                <About navigate={navigate} />
+                <Competencies navigate={navigate} />
+                <Featured navigate={navigate} />
+                <Principles navigate={navigate} />
+                <Blogs navigate={navigate} />
+
+                <Client navigate={navigate} />
+                <Contact navigate={navigate} />
+            </Section>
+        </General.CanvasContainer>
+    }
 
     return (
         <General.CanvasContainer isWideScreen={isWideScreen}>
