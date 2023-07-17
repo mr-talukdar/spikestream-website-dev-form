@@ -66,7 +66,7 @@ function Intro() {
                     ></video>
                 )}
                 <div className="absolute top-0 left-0 w-full h-full bg-black fade-out"></div>
-                <div className="absolute top-0 left-0 w-full h-full px-10 py-52 tablet:py-40 tablet:px-28 laptop:px-44 flex flex-col justify-end">
+                <div className="absolute top-0 left-0 w-full h-full px-10 py-56 tablet:py-40 tablet:px-28 laptop:px-44 flex flex-col justify-end">
                     <div className="flex -mb-16 h-1/2 flex-col justify-end">
                         <div className="text-base tablet:text-xl">
                             <p className="fade-up">Digital Agency</p>

@@ -17,7 +17,7 @@ export default function AboutPage() {
     const { scrollY } = useScroll()
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo({ top: 0, behavior: "instant" })
     }, [])
 
     return (

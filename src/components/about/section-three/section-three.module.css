@@ -1,6 +1,6 @@
 .root {
     min-height: 2160px;
-    height: 100vh;
+    height: 150vh;
     position: relative;
     text-align: center;
     scroll-snap-align: center;
@@ -80,14 +80,16 @@
 .startTrigger {
     display: block;
     position: absolute;
-    top: 0px;
+    bottom: 800px;
     width: 100px;
-    height: 100px;
+    height: 200px;
 }
 
 .endtrigger {
     position: absolute;
-    bottom: 0px;
+    bottom: 648px;
+    width: 100px;
+    height: 100px;
 }
 
 @media only screen and (max-width: 1279px) {
