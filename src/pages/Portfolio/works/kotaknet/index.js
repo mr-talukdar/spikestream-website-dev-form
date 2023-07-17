@@ -22,6 +22,10 @@ function KotakNet() {
   const isWideScreen = window.innerWidth > 1920;
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }, [])
+
+  useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
     } else {
