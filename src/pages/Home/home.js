@@ -19,6 +19,7 @@ import { General, Header } from "@components"
 import { useNavigate } from "react-router-dom"
 import Utils from "@helpers/utils"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { useLocation } from "react-router-dom"
 
 const Section = styled.section`
     position: relative;
@@ -30,6 +31,10 @@ export default function Home() {
     const containerRef = useRef(null)
 
     const bgRef = useRef(null)
+
+    const [home, setHome] = useState(false)
+
+    const { pathname } = useLocation()
 
     // const { scrollY } = useScroll()
 
@@ -54,10 +59,20 @@ export default function Home() {
         window.scrollTo(0, 0)
     }, [])
 
+    const scrollUp = () => {
+        if (pathname === "/") {
+            setHome(true)
+        }
+    }
+
     if (isMobile) {
         ;<General.CanvasContainer isWideScreen={isWideScreen}>
             <Section className="font-graphik">
-                <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Header
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
+                    scrollTop={home}
+                />
                 <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
                 <Intro />
@@ -77,7 +92,11 @@ export default function Home() {
     return (
         <General.CanvasContainer isWideScreen={isWideScreen}>
             <Section className="font-graphik">
-                <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Header
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
+                    scrollTop={home}
+                />
                 <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
                 <Intro />
