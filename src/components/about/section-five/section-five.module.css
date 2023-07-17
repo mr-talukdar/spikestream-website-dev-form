@@ -67,7 +67,7 @@
 .startTrigger {
     display: block;
     position: absolute;
-    top: 0px;
+    top: -906px;
     width: 100px;
     height: 200vh;
 }
