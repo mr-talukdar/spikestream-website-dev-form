@@ -20,6 +20,10 @@ function Keto() {
   const { state: body } = useLocation();
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" })
+  }, [])
+
+  useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
     } else {
