@@ -150,8 +150,10 @@ export default function SectionThree({ scrollY }) {
                     </motion.p>
 
                     <motion.h1 className={css.heading}>
-                        Makes a <br />
-                        remarkable <br /> impact
+                        Makes a<br />
+                        remarkable
+                        <br />
+                        impact
                     </motion.h1>
                 </motion.div>
             </motion.div>

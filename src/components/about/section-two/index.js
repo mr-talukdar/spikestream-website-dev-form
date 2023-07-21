@@ -39,7 +39,7 @@ export default function SectionTwo({ scrollY }) {
     const headingTopScrollValue = useTransform(
         textTrigger.scrollYProgress,
         [0, 1],
-        ["300px", "1460px"]
+        ["300px", "1500px"]
     )
 
     const textTopScrollValue = useTransform(
@@ -94,7 +94,8 @@ export default function SectionTwo({ scrollY }) {
                     className={css.heading}
                     style={{ top: headingTopScrollValueMobile }}
                 >
-                    Go beyond the <br />
+                    Go beyond the
+                    <br />
                     conventional
                 </motion.h1>
 
@@ -128,7 +129,8 @@ export default function SectionTwo({ scrollY }) {
                 className={css.heading}
                 style={{ top: headingTopScrollValue }}
             >
-                Go beyond the <br />
+                Go beyond the
+                <br />
                 conventional
             </motion.h1>
 
