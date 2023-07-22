@@ -35,7 +35,7 @@ export default function SectionOne({ setLoading, scrollY }) {
 
     if (isMobile) {
         return (
-            <motion.img className={css.root} onLoad={handleImageLoad}>
+            <motion.div className={css.root} onLoad={handleImageLoad}>
                 <motion.div className={css.content}>
                     <motion.h1
                         initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function SectionOne({ setLoading, scrollY }) {
                     className={css.galaxy}
                     style={{ bottom: galaxyScrollMobile }}
                 />
-            </motion.img>
+            </motion.div>
         )
     }
 
