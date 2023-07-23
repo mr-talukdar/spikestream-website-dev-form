@@ -138,13 +138,13 @@
     }
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
     .root {
         min-height: 2430px;
     }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (width: 1600px) {
     .root {
         min-height: 2000px;
     }
