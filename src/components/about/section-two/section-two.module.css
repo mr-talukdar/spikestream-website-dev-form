@@ -124,5 +124,11 @@
     }
 }
 
+@media only screen and (max-width: 1680) {
+    .root {
+        height: 175vh;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
 }
