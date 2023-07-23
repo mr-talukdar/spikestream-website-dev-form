@@ -148,11 +148,15 @@
     .root {
         min-height: 2010px;
     }
+
+    .endtrigger {
+        bottom: -200px;
+    }
 }
 
 @media only screen and (max-width: 1680px) {
     .root {
-        min-height: 2010px;
+        min-height: 2524px;
     }
 }
 
