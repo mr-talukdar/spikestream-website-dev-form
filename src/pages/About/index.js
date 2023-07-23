@@ -21,41 +21,44 @@ export default function AboutPage() {
         window.scrollTo({ top: 0, behavior: "instant" })
     }, [])
 
-    return loading ? (
-        <div className="w-screen h-screen overflow-hidden flex justify-center items-center">
-            <Oval
-                height={40}
-                width={40}
-                color="#FF8933"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-                ariaLabel="oval-loading"
-                secondaryColor="#444"
-                strokeWidth={4}
-                strokeWidthSecondary={4}
-            />
-        </div>
-    ) : (
-        <div className={css.root}>
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+    return (
+        <div className="h-full w-full">
+            {loading ? (
+                <div className="w-screen h-screen overflow-hidden flex justify-center items-center">
+                    <Oval
+                        height={40}
+                        width={40}
+                        color="#FF8933"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
+                        ariaLabel="oval-loading"
+                        secondaryColor="#444"
+                        strokeWidth={4}
+                        strokeWidthSecondary={4}
+                    />
+                </div>
+            ) : null}
+            <div className={loading ? 'hidden' : 'css.root'}>
+                <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-            <Container>
-                <SectionOne
-                    scrollY={scrollY}
-                    setLoading={setLoading}
-                    Loading={loading}
-                />
-                <SectionTwo scrollY={scrollY} />
-                <SectionThree scrollY={scrollY} />
-            </Container>
+                <Container>
+                    <SectionOne
+                        scrollY={scrollY}
+                        setLoading={setLoading}
+                        Loading={loading}
+                    />
+                    <SectionTwo scrollY={scrollY} />
+                    <SectionThree scrollY={scrollY} />
+                </Container>
 
-            <SectionFour scrollY={scrollY} />
-            <SectionFive scrollY={scrollY} />
-            <SectionSix />
+                <SectionFour scrollY={scrollY} />
+                <SectionFive scrollY={scrollY} />
+                <SectionSix />
 
-            <SectionSeven />
+                <SectionSeven />
+            </div>
         </div>
     )
 }
