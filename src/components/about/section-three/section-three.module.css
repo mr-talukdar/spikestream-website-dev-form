@@ -174,4 +174,12 @@
     .root {
         min-height: 2000px;
     }
+
+    .lightTrigger {
+        bottom: 42px;
+    }
+
+    .endtrigger {
+        bottom: -42px;
+    }
 }
