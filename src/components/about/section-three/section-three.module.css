@@ -176,10 +176,10 @@
     }
 
     .lightTrigger {
-        bottom: 70px;
+        bottom: 20px;
     }
 
     .endtrigger {
-        bottom: 20px;
+        bottom: 0px;
     }
 }
