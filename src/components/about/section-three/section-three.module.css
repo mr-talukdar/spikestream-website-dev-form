@@ -1,6 +1,6 @@
 .root {
     min-height: 2160px;
-    height: 240vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     scroll-snap-align: center;
@@ -135,6 +135,24 @@
     .content {
         gap: 10px;
         padding-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .root {
+        min-height: 2400px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .root {
+        min-height: 2000px;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .root {
+        min-height: 2300px;
     }
 }
 

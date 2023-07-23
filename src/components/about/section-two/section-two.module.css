@@ -111,3 +111,18 @@
         width: 396px;
     }
 }
+
+@media only screen and (max-width: 1920px) {
+    .root {
+        height: 170vh;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .root {
+        height: 177vh;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+}
