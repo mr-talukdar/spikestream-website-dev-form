@@ -154,7 +154,7 @@
     }
 }
 
-@media only screen and (max-width: 1680px) {
+@media only screen and (min-width: 1680px) {
     .root {
         min-height: 2524px;
     }
