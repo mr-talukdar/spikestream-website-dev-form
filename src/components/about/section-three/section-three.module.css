@@ -140,19 +140,19 @@
 
 @media only screen and (min-width: 1900px) {
     .root {
-        min-height: 2620px;
+        min-height: 2630px;
     }
 }
 
 @media only screen and (max-width: 1600px) {
     .root {
-        min-height: 2000px;
+        min-height: 2010px;
     }
 }
 
 @media only screen and (max-width: 1680px) {
     .root {
-        min-height: 2300px;
+        min-height: 2310px;
     }
 }
 
