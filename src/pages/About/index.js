@@ -15,7 +15,7 @@ import { Oval } from "react-loader-spinner"
 export default function AboutPage() {
     const [menuOpen, setMenuOpen] = useState(false)
     const { scrollY } = useScroll()
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "instant" })
@@ -42,7 +42,11 @@ export default function AboutPage() {
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
             <Container>
-                <SectionOne scrollY={scrollY} setLoading={setLoading} />
+                <SectionOne
+                    scrollY={scrollY}
+                    setLoading={setLoading}
+                    Loading={loading}
+                />
                 <SectionTwo scrollY={scrollY} />
                 <SectionThree scrollY={scrollY} />
             </Container>

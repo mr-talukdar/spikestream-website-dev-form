@@ -97,6 +97,7 @@ export default function SectionFive({ scrollY }) {
                     src={splashIMG}
                     className={css.splash}
                     style={{ width: splashWidthScrollValue }}
+                    onLoad={console.log("motion image loaded")}
                 />
                 <motion.img src={icebergIMG} className={css.iceberg} />
             </motion.div>

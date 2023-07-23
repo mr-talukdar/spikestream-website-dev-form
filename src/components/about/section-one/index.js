@@ -5,7 +5,7 @@ import asteroidIMG from "@images/about/asteroid1.png"
 import galaxyIMG from "@images/about/galaxy.png"
 import { gsap } from "gsap"
 
-export default function SectionOne({ setLoading, scrollY }) {
+export default function SectionOne({ setLoading, scrollY, Loading }) {
     const [galaxyScroll, setGalaxyScroll] = useState(50)
     const [galaxyScrollMobile, setGalaxyScrollMobile] = useState(180)
     const [asteroidScroll, setAsteroidScroll] = useState(-500)
@@ -30,8 +30,9 @@ export default function SectionOne({ setLoading, scrollY }) {
     })
 
     const handleImageLoad = () => {
-        setLoading(false);
-    };
+        setLoading(false)
+        console.log(Loading)
+    }
 
     if (isMobile) {
         return (
@@ -71,7 +72,7 @@ export default function SectionOne({ setLoading, scrollY }) {
     }
 
     return (
-        <motion.div className={css.root}>
+        <motion.div className={css.root} onLoad={handleImageLoad}>
             <motion.div className={css.content}>
                 <motion.h1
                     initial={{ opacity: 0 }}
