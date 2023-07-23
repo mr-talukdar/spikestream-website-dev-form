@@ -152,6 +152,10 @@
     .endtrigger {
         bottom: -200px;
     }
+
+    .lightTrigger {
+        bottom: 119px;
+    }
 }
 
 @media only screen and (width: 1680px) {
