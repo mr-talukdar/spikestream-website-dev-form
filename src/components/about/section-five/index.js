@@ -17,7 +17,7 @@ export default function SectionFive({ scrollY }) {
     const splashWidthScrollValue = useTransform(
         splashTrigger.scrollYProgress,
         [0, 1],
-        ["0%", "200%"]
+        ["0%", "100%"]
     )
 
     const splashWidthScrollValueMobile = useTransform(
@@ -97,7 +97,6 @@ export default function SectionFive({ scrollY }) {
                     src={splashIMG}
                     className={css.splash}
                     style={{ width: splashWidthScrollValue }}
-                    onLoad={console.log("motion image loaded")}
                 />
                 <motion.img src={icebergIMG} className={css.iceberg} />
             </motion.div>
