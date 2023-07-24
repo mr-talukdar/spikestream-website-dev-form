@@ -111,3 +111,27 @@
         width: 396px;
     }
 }
+
+@media only screen and (min-width: 1900px) {
+    .root {
+        height: 175vh;
+    }
+}
+
+@media only screen and (width: 1600px) {
+    .root {
+        height: 177vh;
+    }
+}
+
+@media only screen and (width: 1680px) {
+    .root {
+        height: 174vh;
+    }
+}
+
+@media only screen and (width: 1440px) {
+    .root {
+        height: 178vh;
+    }
+}

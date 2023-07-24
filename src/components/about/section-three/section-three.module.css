@@ -1,6 +1,6 @@
 .root {
     min-height: 2160px;
-    height: 240vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     scroll-snap-align: center;
@@ -138,8 +138,48 @@
     }
 }
 
+@media only screen and (min-width: 1920px) {
+    .root {
+        min-height: 2400px;
+    }
+}
+
+@media only screen and (width: 1600px) {
+    .root {
+        min-height: 2000px;
+    }
+
+    .endtrigger {
+        bottom: -200px;
+    }
+
+    .lightTrigger {
+        bottom: 119px;
+    }
+}
+
+@media only screen and (width: 1680px) {
+    .root {
+        min-height: 2524px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .lightTrigger {
         bottom: 300px;
+    }
+}
+
+@media only screen and (width: 1440px) {
+    .root {
+        min-height: 2000px;
+    }
+
+    .lightTrigger {
+        bottom: 400px;
+    }
+
+    .endtrigger {
+        bottom: 0px;
     }
 }
