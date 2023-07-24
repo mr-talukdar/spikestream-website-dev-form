@@ -39,7 +39,7 @@ export default function AboutPage() {
                     />
                 </div>
             ) : null}
-            <div className={loading ? 'hidden' : 'css.root'}>
+            <div className={loading ? 'hidden' : css.root}>
                 <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 

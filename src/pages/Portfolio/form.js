@@ -131,8 +131,7 @@ const Form = ({ open, setOpen }) => {
         return (
             <div className="font-graphik">
                 <div className="w-11/12 font-light text-3xl laptop:text-6xl laptop:leading-regular">
-                    Would you like to see all the exciting work we have
-                    accomplished?
+                    Let’s create your next significant<br />impact together.
                 </div>
                 <div className="mt-4 laptop:mt-12 text-accent smallphone:w-2/3 w-5/6 smallphone:text-sm text-base laptop:text-lg">
                     Share your details and let us get back to you
@@ -180,11 +179,10 @@ const Form = ({ open, setOpen }) => {
 
     return (
         <nav
-            className={`menu fixed flex flex-col top-0 left-0 w-full p-10 laptop:px-40 z-50 h-screen py-20 laptop:py-32 bg-black transform delay-100 transition-all duration-500 ${
-                open
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 translate-x-full"
-            }`}
+            className={`menu fixed flex flex-col top-0 left-0 w-full p-10 laptop:px-40 z-50 h-screen py-20 laptop:py-32 bg-black transform delay-100 transition-all duration-500 ${ open
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-full"
+                }`}
         >
             <div className="absolute top-8 right-8">
                 <button
