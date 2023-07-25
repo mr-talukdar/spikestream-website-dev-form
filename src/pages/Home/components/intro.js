@@ -43,6 +43,8 @@ function Intro() {
         })
     }, [])
 
+    const isMobile = window.innerWidth < 576
+
     return (
         <General.Container ref={sectionRef}>
             <div className="intro md:fixed relative h-full w-full">
@@ -61,7 +63,7 @@ function Intro() {
                         preload="auto"
                         autoPlay
                         playsInline={true}
-                        src={HOME_BG.Intro}
+                        src={isMobile ? HOME_BG.IntroMob : HOME_BG.Intro}
                         type="video/mp4"
                     ></video>
                 )}
@@ -80,10 +82,10 @@ function Intro() {
                         <div className="w-full laptop:w-2/5 max-w-[500px] mt-6 text-base text-subtle">
                             <p className="fade-up">
                                 We create engaging experiences and captivating
-                                campaigns that leave a lasting impact
+                                campaigns that leave a lasting positive impact
                             </p>
                         </div>
-                        <div className="mt-10 w-40 h-12 bg-accent rounded-full px-5 py-2 fade-in cursor-pointer">
+                        {/* <div className="mt-10 w-40 h-12 bg-accent rounded-full px-5 py-2 fade-in cursor-pointer">
                             <a
                                 className="w-full h-full flex justify-center items-center "
                                 href="tel:+919819158103"
@@ -99,7 +101,7 @@ function Intro() {
                                     Let’s Talk
                                 </div>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
