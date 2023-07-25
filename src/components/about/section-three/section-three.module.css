@@ -1,5 +1,5 @@
 .root {
-    min-height: 2160px;
+    min-height: 2533px;
     height: 100vh;
     position: relative;
     text-align: center;
@@ -140,13 +140,14 @@
 
 @media only screen and (min-width: 1920px) {
     .root {
-        min-height: 2400px;
+        min-height: 2590px;
     }
 }
 
 @media only screen and (width: 1600px) {
+    /*this is working for 1440x900 */
     .root {
-        min-height: 2000px;
+        min-height: 2200px;
     }
 
     .endtrigger {
