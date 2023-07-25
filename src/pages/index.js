@@ -17,3 +17,4 @@ export { default as About } from "./About"
 export { default as Old } from "./Old"
 
 export { default as Privacy } from './InfoPages/Privacy'
+export { default as ContactUs } from './InfoPages/ContactUs'

@@ -142,7 +142,7 @@ function Portfolio() {
 
     return (
         <>
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} contactCss="pl-10 laptop:pl-28" />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Form open={formOpen} setOpen={setFormOpen} />
             <LocomotiveScrollProvider
@@ -159,7 +159,7 @@ function Portfolio() {
                                 data-scroll-section
                                 className="portfolio font-graphik"
                             >
-                                <div className="w-full py-20 px-10 laptop:py-20 laptop:px-28 laptop:mt-8">
+                                <div className="w-full py-20 px-10 laptop:py-20 laptop:px-28 mt-8 laptop:mt-20">
                                     <div className="text-accent text-xl fade-up">
                                         Featured Work
                                     </div>

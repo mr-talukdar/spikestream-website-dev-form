@@ -93,7 +93,7 @@ function Blogs() {
 
     return (
         <>
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} contactCss="pl-10 laptop:pl-28"/>
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
             <LocomotiveScrollProvider
@@ -111,7 +111,7 @@ function Blogs() {
                                 className="blogsPage w-full min-h-screen font-graphik bg-[#2C2C2C] px-10 py-20 laptop:py-20 laptop:px-28"
                             >
                                 <div className="w-full h-full flex flex-col justify-between">
-                                    <div>
+                                    <div className="mt-8 laptop:mt-20">
                                         <div className="text-accent text-xl">
                                             <p className="fade-up">Blogs</p>
                                         </div>

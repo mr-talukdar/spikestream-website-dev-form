@@ -45,7 +45,7 @@ function IntroPage2(props) {
                 <div className='w-full h-full'>
                     <div id={`${ props.id }Image`} className='bg-cover bg-center' style={props.rect ? { position: "absolute", top: props.rect.top, left: props.rect.left, width: props.rect.width, height: props.rect.height, backgroundImage: `url(${ props.cover })` } : { position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundImage: `url(${ props.cover })` }}>
                         <div className='pt-2 pb-8 tablet:py-44 laptop:py-12 px-10 tablet:px-10 laptop:px-44 flex flex-col h-full w-full gap-y-7 '>
-                            <div className='text-[#F5F5F5] mt-6 tablet:mt-12 fade-container'>
+                            <div className='text-[#F5F5F5] mt-20 fade-container'>
                                 <div className='flex flex-row items-center cursor-pointer' onClick={() => props.navigate('/works', { replace: true })}>
                                     <img src={BLOG_IMAGES.Prev} alt={BLOG_IMAGES.Prev} className='w-[8px] h-[14px] object-contain mr-[10px] fade-up' />
                                     <div className='text-accent font-medium text-base mac:text-lg fade-up'>Featured Work</div>

@@ -13,6 +13,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Pages.Home />} />
                 <Route path="/privacy-policy" element={<Pages.Privacy />} />
+                <Route path="/contact-us" element={<Pages.ContactUs />} />
                 <Route path="/works">
                     <Route index element={<Pages.Portfolio />} />
                     <Route path="ketobalanced" element={<Pages.Keto />} />
