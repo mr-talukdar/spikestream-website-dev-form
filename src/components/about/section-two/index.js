@@ -63,7 +63,7 @@ export default function SectionTwo({ scrollY }) {
     const asteroidTopScrollValue = useTransform(
         textTrigger.scrollYProgress,
         [0, 1],
-        ["730px", "-700px"]
+        ["730px", "0px"]
     )
 
     const asteroidTopScrollValueMobile = useTransform(
