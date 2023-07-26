@@ -4,7 +4,11 @@ import { useEffect, useState } from "react"
 import { Oval } from "react-loader-spinner"
 import emailjs from "@emailjs/browser"
 import { PORTFOLIO_IMAGES } from "@images"
+import { useNavigate } from 'react-router-dom';
+
 const Form = ({ open, setOpen }) => {
+    const navigate = useNavigate();
+
     const [name, setName] = useState("")
 
     const [number, setNumber] = useState("")
@@ -105,7 +109,7 @@ const Form = ({ open, setOpen }) => {
                             alt={PORTFOLIO_IMAGES.form_success}
                         />
                         <div className="mt-12 font-graphik font-light text-2xl tablet:text-5xl text-center">
-                            Thank you, we will get back<br/>to you soon
+                            Thank you, we will get back<br />to you soon
                         </div>
                     </div>
                 )
@@ -179,6 +183,22 @@ const Form = ({ open, setOpen }) => {
 
     return (
         <div className="p-10 laptop:px-40 z-50 h-screen py-20 laptop:py-32">
+            <div className="absolute top-8 right-8">
+                <button
+                    className="text-subtle flex flex-row items-center"
+                    onClick={() => {
+                        navigate(-1)
+                    }}
+                >
+                    <span>Close</span>
+                    <svg
+                        className="ml-2 h-6 w-6 fill-current"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M6.7 6.7a1 1 0 0 1 1.4 0L12 10.6l3.9-3.9a1 1 0 1 1 1.4 1.4L13.4 12l3.9 3.9a1 1 0 1 1-1.4 1.4L12 13.4l-3.9 3.9a1 1 0 0 1-1.4-1.4L10.6 12 6.7 8.1a1 1 0 0 1 0-1.4z" />
+                    </svg>
+                </button>
+            </div>
             {
                 getMainContent()
             }
