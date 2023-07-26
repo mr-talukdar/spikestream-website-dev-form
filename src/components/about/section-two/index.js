@@ -5,7 +5,7 @@ import {
     useScroll,
     useTransform,
 } from "framer-motion"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import lightIMG from "@images/about/light.png"
 import planetIMG from "@images/about/planet.png"
 import asteroidIMG from "@images/about/asteroid2.png"
@@ -71,6 +71,10 @@ export default function SectionTwo({ scrollY }) {
         [0, 1],
         ["240px", "-120px"]
     )
+
+    useEffect(() => {
+        console.log(lightTrigger.scrollYProgress)
+    }, [])
 
     if (isMobile) {
         return (
