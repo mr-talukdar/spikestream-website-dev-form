@@ -24,7 +24,7 @@ function Intro() {
             ".intro .fade-out",
             { opacity: 1 },
             {
-                opacity: 0.3,
+                opacity: 0,
                 duration: 2,
                 ease: "linear",
             }
