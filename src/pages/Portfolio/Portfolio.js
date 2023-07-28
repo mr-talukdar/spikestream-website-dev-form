@@ -110,6 +110,10 @@ function Portfolio() {
     const [scrollOpen, setScrollOpen] = useState(false)
 
     useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "instant" })
+    }, [])
+
+    useEffect(() => {
         if (menuOpen) {
             document.body.style.overflow = "hidden"
         } else {
@@ -136,13 +140,13 @@ function Portfolio() {
         setTimeout(() => setScrollOpen(true), 500)
     }, [])
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "instant" })
-    }, [])
-
     return (
         <>
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} contactCss="pl-10 laptop:pl-28" />
+            <Header
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
+                contactCss="pl-10 laptop:pl-28"
+            />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Form open={formOpen} setOpen={setFormOpen} />
             <LocomotiveScrollProvider

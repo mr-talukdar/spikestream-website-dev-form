@@ -22,7 +22,7 @@ export default function AboutPage() {
     }, [])
 
     return (
-        <div className="h-full w-full">
+        <>
             {loading ? (
                 <div className="w-screen h-screen overflow-hidden flex justify-center items-center">
                     <Oval
@@ -39,7 +39,7 @@ export default function AboutPage() {
                     />
                 </div>
             ) : null}
-            <div className={loading ? 'hidden' : css.root}>
+            <div className={css.root}>
                 <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
@@ -59,6 +59,6 @@ export default function AboutPage() {
 
                 <SectionSeven />
             </div>
-        </div>
+        </>
     )
 }
