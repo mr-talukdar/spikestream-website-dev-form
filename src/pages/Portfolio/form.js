@@ -13,7 +13,7 @@ const Form = ({ open, setOpen }) => {
     const [message, setMessage] = useState("")
 
     const [sending, setSending] = useState(false)
-    const [dataSent, setDataSent] = useState(true)
+    const [dataSent, setDataSent] = useState(false)
     const [sendStatus, setSendStatus] = useState(false)
 
     const SetName = (value) => {
@@ -104,8 +104,8 @@ const Form = ({ open, setOpen }) => {
                             src={PORTFOLIO_IMAGES.form_success}
                             alt={PORTFOLIO_IMAGES.form_success}
                         />
-                        <div className="mt-12 font-graphik font-light text-2xl tablet:text-[70px] text-center">
-                            Thank you, we will get back to you soon
+                        <div className="mt-12 font-graphik font-light text-2xl tablet:text-6xl text-center">
+                            Thank you, we will get<br />back to you soon
                         </div>
                     </div>
                 )
@@ -117,7 +117,7 @@ const Form = ({ open, setOpen }) => {
                         alt={PORTFOLIO_IMAGES.form_error}
                     />
                     <div className="mt-12 font-graphik font-light text-2xl tablet:text-[70px] text-center">
-                        Sorry, something went wrong
+                        Sorry, something went<br />wrong
                     </div>
                     <div
                         onClick={resetForm}
