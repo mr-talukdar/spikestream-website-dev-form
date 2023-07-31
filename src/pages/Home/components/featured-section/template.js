@@ -44,7 +44,7 @@ function FeaturedTemplate(props) {
           <div className="basis-2/3 laptop:basis-1/2 flex items-center justify-center order-1 laptop:order-2 fade-up">
             {
               props.isVideo ?
-                <div className="w-full h-full flex justify-start items-center laptop:p-4 mac:p-16 ultrawide:p-28">
+                <div className="w-full h-full flex justify-center items-center laptop:p-4 mac:p-16 ultrawide:p-28">
                   <div
                     className="absolute bg-mobile-border bg-contain bg-no-repeat bg-center flex justify-center items-center
                                     smallphone:w-[220px] smallphone:h-[440px]
