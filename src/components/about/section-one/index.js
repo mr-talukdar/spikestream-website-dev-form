@@ -1,6 +1,6 @@
 import css from "./section-one.module.css"
 import { motion, useMotionValueEvent } from "framer-motion"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import asteroidIMG from "@images/about/asteroid1.png"
 import galaxyIMG from "@images/about/galaxy.png"
 import { gsap } from "gsap"
@@ -29,8 +29,13 @@ export default function SectionOne({ setLoading, scrollY, Loading }) {
         }
     })
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 6000)
+    }, [])
     const handleImageLoad = () => {
-        setLoading(false)
+        //setLoading(false)
         console.log(Loading)
     }
 

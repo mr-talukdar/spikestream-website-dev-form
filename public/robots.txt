@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /dashboard/
+Allow: /
+Sitemap: https://spikestream.co/sitemap.xml
