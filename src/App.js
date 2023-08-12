@@ -14,19 +14,20 @@ function App() {
                 <Route path="/" element={<Pages.Home />} />
                 <Route path="/privacy-policy" element={<Pages.Privacy />} />
                 <Route path="/contact-us" element={<Pages.ContactUs />} />
+                <Route path="/digital-marketing-services-works" element={<Pages.Portfolio />} />
                 <Route path="/works">
                     <Route index element={<Pages.Portfolio />} />
-                    <Route path="ketobalanced" element={<Pages.Keto />} />
+                    <Route path="app-development-ketobalanced" element={<Pages.Keto />} />
                     <Route path="hbits" element={<Pages.Hbits />} />
                     <Route path="acepay" element={<Pages.Ace />} />
                     <Route path="iqvia" element={<Pages.Iqvia />} />
                     <Route path="kotakloans" element={<Pages.KotakLoans />} />
                     <Route
-                        path="kotaknetbanking"
+                        path="website-animation-kotaknetbanking"
                         element={<Pages.KotakNet />}
                     />
                     <Route
-                        path="celestial-mountains"
+                        path="web-design-celestial-mountains"
                         element={<Pages.Celestial />}
                     />
                     <Route path="vectorflow" element={<Pages.VectorFlow />} />

@@ -30,7 +30,7 @@ function Sec8() {
             <div id="kotaknetsec10">
                 <PrevNext
                     navigate={navigate}
-                    nextWork="/works/ketobalanced"
+                    nextWork="/works/app-development-ketobalanced"
                     css="px-4 tablet:px-12 laptop:px-28 py-12 bg-black"
                 />
             </div>

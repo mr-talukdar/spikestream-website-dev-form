@@ -16,7 +16,7 @@ function Featured({ navigate }) {
         }
         title="An App To\nImprove Health"
         subtitle="Design + Development"
-        link="/works/ketobalanced"
+        link="/works/app-development-ketobalanced"
         navigate={navigate}
       />
       <FeaturedTemplate
@@ -40,7 +40,7 @@ function Featured({ navigate }) {
         iconWidth={"w-8/12 tablet:w-1/2  laptop:w-11/12 desktop:w-1/2"}
         title="Can Future Apps\nBe So Immersive?"
         subtitle="Concept Prototype"
-        link="/works/celestial-mountains"
+        link="/works/web-design-celestial-mountains"
         navigate={navigate}
       />
       <FeaturedTemplate
@@ -52,7 +52,7 @@ function Featured({ navigate }) {
         }
         title="Micro Delights,\nDelivered"
         subtitle="Script, Screenplay & Copy"
-        link="/works/kotaknetbanking"
+        link="/works/website-animation-kotaknetbanking"
         navigate={navigate}
       />
     </section>

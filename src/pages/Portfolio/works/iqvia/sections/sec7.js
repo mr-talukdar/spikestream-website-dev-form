@@ -36,7 +36,7 @@ function Sec7() {
                 </div>
                 <PrevNext
                     navigate={navigate}
-                    nextWork="/works/celestial-mountains"
+                    nextWork="/works/web-design-celestial-mountains"
                     css="px-4 tablet:px-12 laptop:px-28 py-12 bg-black"
                 />
 

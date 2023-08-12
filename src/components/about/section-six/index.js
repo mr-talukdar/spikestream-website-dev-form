@@ -38,7 +38,7 @@ export default function SectionSix() {
                         </div>
                         <div
                             className="flex flex-row items-center cursor-pointer"
-                            onClick={() => navigate("/works")}
+                            onClick={() => navigate("/digital-marketing-services-works")}
                         >
                             <div className="text-sm font-medium">
                                 View Our Work

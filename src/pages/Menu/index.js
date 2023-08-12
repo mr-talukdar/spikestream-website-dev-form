@@ -32,7 +32,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                     Home
                                 </Link>
                                 <Link
-                                    to="/works"
+                                    to="/digital-marketing-services-works"
                                     className="nav-link group transition duration-300 hover:text-accent"
                                     onClick={() => {
                                         setMenuOpen(false)

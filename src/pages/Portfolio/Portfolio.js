@@ -25,7 +25,7 @@ function Portfolio() {
             projName: "Ketobalanced",
             projTopic: "UX & UI Design + Development",
             isOnRequest: false,
-            route: "ketobalanced",
+            route: "app-development-ketobalanced",
         },
         {
             cssIdentifier: "hbits",
@@ -57,7 +57,7 @@ function Portfolio() {
             projName: "Celestial Mountains",
             projTopic: "Adobe XD Prototype",
             isOnRequest: false,
-            route: "celestial-mountains",
+            route: "web-design-celestial-mountains",
         },
         {
             cssIdentifier: "ace",
@@ -88,7 +88,7 @@ function Portfolio() {
             projName: "Kotak Mahindra Bank (Netbanking)",
             projTopic: "Script, Screenplay & Copy",
             isOnRequest: false,
-            route: "kotaknetbanking",
+            route: "website-animation-kotaknetbanking",
         },
         {
             cssIdentifier: "yippee",

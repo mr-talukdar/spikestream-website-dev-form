@@ -3,7 +3,7 @@ import { BLOG_IMAGES } from "@images";
 
 function PrevNext(props) {
     function navigateToWorks() {
-        props.navigate("/works");
+        props.navigate("/digital-marketing-services-works");
     }
 
     function navigateToNextWork() {
