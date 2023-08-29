@@ -5,6 +5,7 @@ export const ALL_BLOGS_QUERY = gql`
   blogDatas(orderBy: publishedAt_DESC, first: 500) {
     id
     title
+    slugBlogs
     image{
       url
     }
@@ -14,7 +15,7 @@ export const ALL_BLOGS_QUERY = gql`
 `;
 export const SINGLE_BLOG_QUERY = (id) => gql`
 {
-  blogDatas(where: {id: "${ id }"}) {
+  blogDatas(where: {slugBlogs: "${ id }"}) {
     id
     readTime
     title
@@ -33,14 +34,16 @@ export const SINGLE_BLOG_QUERY = (id) => gql`
 export const GET_NEXT_BLOG = (id) => gql`
 {
   blogDatas(after: "${ id }", orderBy: publishedAt_DESC) {
-    id
+    id,
+    slugBlogs
   }
 }
 `
 export const GET_PREVIOUS_BLOG = (id) => gql`
 {
   blogDatas(before: "${ id }", orderBy: publishedAt_DESC) {
-    id
+    id,
+    slugBlogs
   }
 }
 `
@@ -49,7 +52,8 @@ export const BLOGS_QUICKVIEW_QUERY = gql`
 {
   blogDatas(orderBy: publishedAt_DESC, first: 3) {
     id
-    title
+    title,
+    slugBlogs,
     image {
       url
     }

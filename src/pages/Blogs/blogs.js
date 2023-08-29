@@ -23,7 +23,7 @@ function ListItem({ data }) {
     const handleClick = () => {
         const rect = divRef.current.getBoundingClientRect()
         const scrollPos = window.scrollY
-        navigate(`/blogs/read?id=${data.id}`, { state: { rect, scrollPos } })
+        navigate(`/blogs/read/${ data.slugBlogs }`, { state: { rect, scrollPos, id: data.id } })
     }
 
     useEffect(() => {
@@ -69,6 +69,7 @@ function Blogs() {
 
     useEffect(() => {
         if (data) {
+            console.log(data);
             setBlogData(data.blogDatas)
         }
     }, [data])
@@ -93,7 +94,7 @@ function Blogs() {
 
     return (
         <>
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} contactCss="pl-10 laptop:pl-28"/>
+            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} contactCss="pl-10 laptop:pl-28" />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
             <LocomotiveScrollProvider

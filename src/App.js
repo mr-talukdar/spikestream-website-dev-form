@@ -34,7 +34,7 @@ function App() {
                 </Route>
 
                 <Route path="/blogs" element={<Pages.Blogs />} />
-                <Route path="/blogs/read" element={<Pages.BlogPage />} />
+                <Route path="/blogs/read/:blogPath" element={<Pages.BlogPage />} />
 
                 <Route path="/about" element={<Pages.About />} />
                 <Route path="/old" element={<Pages.Old />} />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from "styled-components";
-import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import { useParams, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { General, Header, Footer } from '@components';
 import Menu from '../Menu'
 import useLocoScroll from '@hooks/useLocoScroll';
@@ -21,15 +21,14 @@ function BlogPage() {
     const containerRef = useRef(null);
     const [menuOpen, setMenuOpen] = useState(false);
     const [blogData, setBlogData] = useState(null);
-
+    const { blogPath } = useParams();
     const [searchParams, setSearchParams] = useSearchParams()
 
     const { state: body, pathname, search } = useLocation();
 
     const isPhone = window.innerWidth < 992;
-
-    const { data } = useQuery(API.SINGLE_BLOG_QUERY(searchParams.get('id')));
-    const { data: nextBlog } = useQuery(API.GET_NEXT_BLOG(searchParams.get('id')));
+    const { data } = useQuery(API.SINGLE_BLOG_QUERY(blogPath));
+    const { data: nextBlog } = useQuery(API.GET_NEXT_BLOG(data ? data.id : null));
     const [nextBlogData, setNextBlogData] = useState(null);
 
     const [scrollOpen, setScrollOpen] = useState(false)
@@ -47,6 +46,7 @@ function BlogPage() {
 
     useEffect(() => {
         if (data && data.blogDatas && data.blogDatas.length > 0) {
+            console.log(data.blogDatas);
             setBlogData(data.blogDatas[0]);
             setScrollOpen(true)
         }
@@ -87,7 +87,7 @@ function BlogPage() {
 
     const goToNextBlog = () => {
         if (nextBlogData) {
-            window.location.replace(`/blogs/read?id=${ nextBlogData.id }`);
+            window.location.replace(`/blogs/read/${data.slugBlogs}`);
         }
     }
 
