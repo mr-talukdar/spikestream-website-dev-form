@@ -23,7 +23,9 @@ function ListItem({ data }) {
     const handleClick = () => {
         const rect = divRef.current.getBoundingClientRect()
         const scrollPos = window.scrollY
-        navigate(`/blogs/read/${ data.slugBlogs }`, { state: { rect, scrollPos, id: data.id } })
+        navigate(`/blogs/read/${data.slugBlogs}`, {
+            state: { rect, scrollPos, id: data.id },
+        })
     }
 
     useEffect(() => {
@@ -65,11 +67,11 @@ function Blogs() {
     const [blogData, setBlogData] = useState([])
 
     // Data stores the data passed from query, error stores if the GraphQl Server return any error and Loading can be used to show a loading screen, here this will return an object with blogsData Array
+
     const { data } = useQuery(API.ALL_BLOGS_QUERY)
 
     useEffect(() => {
         if (data) {
-            console.log(data);
             setBlogData(data.blogDatas)
         }
     }, [data])
@@ -94,7 +96,11 @@ function Blogs() {
 
     return (
         <>
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} contactCss="pl-10 laptop:pl-28" />
+            <Header
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
+                contactCss="pl-10 laptop:pl-28"
+            />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
             <LocomotiveScrollProvider
