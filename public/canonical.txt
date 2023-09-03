@@ -1,0 +1,8 @@
+
+https://spikestream.co/
+
+
+Redirect 301 from www to non www in .htacces file
+
+RewriteCond %{HTTP_HOST} ^www.yourdomain.com [NC]
+RewriteRule (.*) https://yourdomain.com/$1 [L,R=301]
