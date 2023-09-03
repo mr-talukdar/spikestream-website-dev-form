@@ -6,30 +6,18 @@ import { Turn as Hamburger } from "hamburger-react"
 function Header(props) {
     const isWideScreen = window.innerWidth > 1920
 
-    const scrollTop = () => {
-        if (props.scrollTop) {
-            console.log(props.scrollTop)
-        }
-    }
-
     return (
-        <div
-            className={`z-40 fixed w-full top-5 tablet:top-8 laptop:top-10 bg-no-repeat pr-10 ${
-                props.contactCss
-                    ? props.contactCss
-                    : "pl-10 tablet:pl-28 laptop:pl-44"
-            }`}
-        >
-            <div className="flex flex-row items-center w-full justify-between">
-                <div>
-                    <Link
-                        to="/contact-us"
-                        className="w-32 h-8 bg-[#1D232C] rounded-full px-4 py-3 cursor-pointer text-sm text-white font-graphik font-medium text-center"
-                    >
-                        Contact
-                    </Link>
-                </div>
-                <div className="flex flex-row items-center ">
+        <div>
+            <div className="z-20 fixed top-5 tablet:top-8 left-10 laptop:top-16 bg-no-repeat pl-10 tablet:pl-28">
+                <Link
+                    to="/contact-us"
+                    className="w-32 h-8 bg-[#1D232C] rounded-full px-4 py-3 cursor-pointer text-sm text-white font-graphik font-medium text-center"
+                >
+                    Contact
+                </Link>
+            </div>
+            <div className="z-40 fixed top-5 tablet:top-8 right-10 laptop:top-10 bg-no-repeat">
+                <div className="flex flex-row items-center">
                     <Link
                         to="/"
                         className="smallphone:w-9 w-12 mac:w-14 ultrawide:w-20 max-w-[100%]"

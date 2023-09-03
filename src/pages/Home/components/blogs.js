@@ -9,7 +9,7 @@ import { useQuery } from "@apollo/client"
 
 function ListItem({ data, navigate }) {
     function openBlog() {
-        navigate(`/blogs/read?id=${data.id}`)
+        navigate(`/blogs/read/${ data.slugBlogs }`)
     }
 
     return (
@@ -64,7 +64,7 @@ function Blogs({ navigate }) {
     return (
         <div ref={sectionRef} data-scroll-section>
             <div
-                style={{ backgroundImage: `url(${HOME_BG.Blog})` }}
+                style={{ backgroundImage: `url(${ HOME_BG.Blog })` }}
                 className=" relative blogs min-h-screen w-full object-cover justify-between p-10 tablet:py-20 tablet:px-28 laptop:px-44 mac:py-24 ultrawide:py-36 flex flex-col"
             >
                 <div>
