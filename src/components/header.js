@@ -8,7 +8,7 @@ function Header(props) {
 
     return (
         <div>
-            <div className="z-20 fixed top-5 tablet:top-8 left-10 laptop:top-16 bg-no-repeat pl-10 tablet:pl-28">
+            <div className="z-20 fixed top-8 tablet:top-8  laptop:top-16 bg-no-repeat pl-10 tablet:pl-28">
                 <Link
                     to="/contact-us"
                     className="w-32 h-8 bg-[#1D232C] rounded-full px-4 py-3 cursor-pointer text-sm text-white font-graphik font-medium text-center"
