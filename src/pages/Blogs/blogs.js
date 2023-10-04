@@ -23,7 +23,7 @@ function ListItem({ data }) {
     const handleClick = () => {
         const rect = divRef.current.getBoundingClientRect()
         const scrollPos = window.scrollY
-        navigate(`/blogs/read/${data.slugBlogs}`, {
+        navigate(`/blogs/${data.slugBlogs}`, {
             state: { rect, scrollPos, id: data.id },
         })
     }
