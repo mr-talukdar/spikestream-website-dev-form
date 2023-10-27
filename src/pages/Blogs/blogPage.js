@@ -92,9 +92,7 @@ function BlogPage() {
 
     const goToNextBlog = () => {
         if (nextBlogData) {
-            window.location.replace(
-                `/blogs/read/${nextBlog.blogDatas[0].slugBlogs}`
-            )
+            window.location.replace(`/blogs/${nextBlog.blogDatas[0].slugBlogs}`)
         }
     }
 
@@ -142,7 +140,7 @@ function BlogPage() {
                                                   }
                                         }
                                     />
-                                    <div className="absolute top-0 left-0 mx-6 mt-9 tablet:mx-16 laptop:mx-44 laptop:my-32">
+                                    <div className="absolute top-0 left-0 mx-[2.5rem] mt-[6.25rem] tablet:mx-16 laptop:mx-44 laptop:my-32">
                                         <div
                                             className="flex flex-row items-center cursor-pointer"
                                             onClick={returnToPrevPage}
