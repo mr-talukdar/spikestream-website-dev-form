@@ -1,8 +1,9 @@
 import React from "react"
-import { HOME_ICONS } from "@images"
+import { HOME_ICONS, SOCIALS } from "@images"
 import { Link } from "react-router-dom"
 import * as Utils from "@helpers/utils"
 import { General } from "@components"
+import ShareButton from "./components/ShareButton"
 
 const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
     const isWideScreen = window.innerWidth > Utils.ULTRAWIDE_WIDTH
@@ -119,6 +120,25 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                             <br />
                                             Off Filmcity Road, India, Mumbai -
                                             400097.
+                                            <div className="pt-2 ml-0 flex flex-row gap-3">
+                                                <ShareButton
+                                                    url="https://www.facebook.com/spikestream.co"
+                                                    icon={SOCIALS.fb}
+                                                />
+                                                <ShareButton
+                                                    url="https://www.instagram.com/spikestream"
+                                                    icon={SOCIALS.ig}
+                                                />
+                                                <ShareButton
+                                                    url="http://www.linkedin.com/company/spikestream
+                                                    "
+                                                    icon={SOCIALS.ld}
+                                                />
+                                                <ShareButton
+                                                    url="https://www.youtube.com/@spikestreamdesign"
+                                                    icon={SOCIALS.yt}
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

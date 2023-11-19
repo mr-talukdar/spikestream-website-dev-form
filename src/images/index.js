@@ -251,6 +251,13 @@ const VIDEOS = {
     ace_pay: require("./videos/AcePay_Long.mp4"),
 }
 
+const SOCIALS = {
+    fb: require("./socials/facebook.png"),
+    ig: require("./socials/instagram.png"),
+    ld: require("./socials/linkedin.png"),
+    yt: require("./socials/youtube.png"),
+}
+
 export {
     VIDEOS,
     HOME_BG,
@@ -267,4 +274,5 @@ export {
     ACE_IMAGES,
     VECTOR_FLOW_IMAGES,
     ABOUT_IMAGES,
+    SOCIALS,
 }
