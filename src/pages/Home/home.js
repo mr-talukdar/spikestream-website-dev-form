@@ -68,17 +68,17 @@ export default function Home() {
     const schema = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
-        "name": "SpikeStream",
-        "url": "https://spikestream.co/",
-        "potentialAction": {
+        name: "SpikeStream",
+        url: "https://spikestream.co/",
+        potentialAction: {
             "@type": "SearchAction",
-            "target": "https://spikestream.co/works{search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+            target: "https://spikestream.co/works{search_term_string}",
+            "query-input": "required name=search_term_string",
+        },
     }
 
     if (isMobile) {
-        ; <General.CanvasContainer isWideScreen={isWideScreen}>
+        ;<General.CanvasContainer isWideScreen={isWideScreen}>
             <Section className="font-graphik">
                 <Header
                     menuOpen={menuOpen}
@@ -115,7 +115,9 @@ export default function Home() {
                 <script type="application/ld+json">
                     {JSON.stringify(schema)}
                 </script>
-                <div className="md:mt-[2rem]">
+                <div
+                    className={menuOpen ? "fixed md:mt-[2rem]" : "md:mt-[2rem]"}
+                >
                     <About navigate={navigate} />
                     <Competencies navigate={navigate} />
                     <Featured navigate={navigate} />
