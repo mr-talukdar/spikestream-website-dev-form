@@ -91,6 +91,7 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                             onClick={Utils.openWhatsappChat}
                                         ></div>
                                     </div>
+
                                     <div className="smallphone:mt-4 mt-8 w-40 h-12 bg-accent rounded-full px-5 py-2 cursor-pointer">
                                         <a
                                             className="w-full h-full flex justify-center items-center "
@@ -108,6 +109,25 @@ const MenuOverlay = ({ menuOpen, setMenuOpen }) => {
                                             </div>
                                         </a>
                                     </div>
+                                </div>
+                                <div className="laptop:hidden pt-4 ml-0 flex flex-row gap-3">
+                                    <ShareButton
+                                        url="https://www.facebook.com/spikestream.co"
+                                        icon={SOCIALS.fb}
+                                    />
+                                    <ShareButton
+                                        url="https://www.instagram.com/spikestream"
+                                        icon={SOCIALS.ig}
+                                    />
+                                    <ShareButton
+                                        url="http://www.linkedin.com/company/spikestream
+                                                    "
+                                        icon={SOCIALS.ld}
+                                    />
+                                    <ShareButton
+                                        url="https://www.youtube.com/@spikestreamdesign"
+                                        icon={SOCIALS.yt}
+                                    />
                                 </div>
                                 <div className="hidden laptop:block laptop:col-span-3 ">
                                     <div className="w-full flex flex-col items-center">
