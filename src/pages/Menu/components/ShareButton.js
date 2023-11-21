@@ -1,9 +1,9 @@
 import React from "react"
 
-import { LinkedinIcon, FacebookIcon } from "react-share"
-
 const ShareButton = (props) => {
     var openLink = () => {
+        props.MenuOpen(false)
+        console.log(props.menuOpen)
         window.open(props.url)
     }
 

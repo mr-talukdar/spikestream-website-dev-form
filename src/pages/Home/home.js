@@ -47,6 +47,10 @@ export default function Home() {
 
     const navigate = useNavigate()
 
+    var SetMenuOpen = (value) => {
+        setMenuOpen(value)
+    }
+
     useEffect(() => {
         if (menuOpen) {
             document.body.style.overflow = "hidden"
@@ -85,7 +89,11 @@ export default function Home() {
                     setMenuOpen={setMenuOpen}
                     scrollTop={home}
                 />
-                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                <Menu
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
+                    SetMenuOpen={SetMenuOpen}
+                />
 
                 <Intro />
 
@@ -109,7 +117,12 @@ export default function Home() {
                     setMenuOpen={setMenuOpen}
                     scrollTop={home}
                 />
-                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+                <Menu
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
+                    SetMenuOpen={SetMenuOpen}
+                />
 
                 <Intro />
                 <script type="application/ld+json">
