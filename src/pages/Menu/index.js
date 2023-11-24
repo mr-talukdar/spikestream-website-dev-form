@@ -5,7 +5,7 @@ import * as Utils from "@helpers/utils"
 import { General } from "@components"
 import ShareButton from "./components/ShareButton"
 
-const MenuOverlay = ({ menuOpen, setMenuOpen, SetMenuOpen }) => {
+const MenuOverlay = ({ menuOpen, setMenuOpen, SetScrollFix }) => {
     const isWideScreen = window.innerWidth > Utils.ULTRAWIDE_WIDTH
 
     return (
@@ -114,27 +114,23 @@ const MenuOverlay = ({ menuOpen, setMenuOpen, SetMenuOpen }) => {
                                     <ShareButton
                                         url="https://www.facebook.com/spikestream.co"
                                         icon={SOCIALS.fb}
-                                        MenuOpen={SetMenuOpen}
-                                        menuOpen={menuOpen}
+                                        SetScrollFix={SetScrollFix}
                                     />
                                     <ShareButton
                                         url="https://www.instagram.com/spikestream"
                                         icon={SOCIALS.ig}
-                                        MenuOpen={SetMenuOpen}
-                                        menuOpen={menuOpen}
+                                        SetScrollFix={SetScrollFix}
                                     />
                                     <ShareButton
                                         url="http://www.linkedin.com/company/spikestream
                                                     "
                                         icon={SOCIALS.ld}
-                                        MenuOpen={SetMenuOpen}
-                                        menuOpen={menuOpen}
+                                        SetScrollFix={SetScrollFix}
                                     />
                                     <ShareButton
                                         url="https://www.youtube.com/@spikestreamdesign"
                                         icon={SOCIALS.yt}
-                                        MenuOpen={SetMenuOpen}
-                                        menuOpen={menuOpen}
+                                        SetScrollFix={SetScrollFix}
                                     />
                                 </div>
                                 <div className="hidden laptop:block laptop:col-span-3 ">
@@ -152,27 +148,23 @@ const MenuOverlay = ({ menuOpen, setMenuOpen, SetMenuOpen }) => {
                                                 <ShareButton
                                                     url="https://www.facebook.com/spikestream.co"
                                                     icon={SOCIALS.fb}
-                                                    MenuOpen={SetMenuOpen}
-                                                    menuOpen={menuOpen}
+                                                    SetScrollFix={SetScrollFix}
                                                 />
                                                 <ShareButton
                                                     url="https://www.instagram.com/spikestream"
                                                     icon={SOCIALS.ig}
-                                                    MenuOpen={SetMenuOpen}
-                                                    menuOpen={menuOpen}
+                                                    SetScrollFix={SetScrollFix}
                                                 />
                                                 <ShareButton
                                                     url="http://www.linkedin.com/company/spikestream
                                                     "
                                                     icon={SOCIALS.ld}
-                                                    MenuOpen={SetMenuOpen}
-                                                    menuOpen={menuOpen}
+                                                    SetScrollFix={SetScrollFix}
                                                 />
                                                 <ShareButton
                                                     url="https://www.youtube.com/@spikestreamdesign"
                                                     icon={SOCIALS.yt}
-                                                    MenuOpen={SetMenuOpen}
-                                                    menuOpen={menuOpen}
+                                                    SetScrollFix={SetScrollFix}
                                                 />
                                             </div>
                                         </div>

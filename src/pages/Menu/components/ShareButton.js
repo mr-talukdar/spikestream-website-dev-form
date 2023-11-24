@@ -2,7 +2,7 @@ import React from "react"
 
 const ShareButton = (props) => {
     var openLink = () => {
-        props.MenuOpen(false)
+        props.SetScrollFix(false)
         console.log(props.menuOpen)
         window.open(props.url)
     }

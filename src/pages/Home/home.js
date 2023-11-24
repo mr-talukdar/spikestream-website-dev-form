@@ -28,6 +28,7 @@ const Section = styled.section`
 
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false)
+    const [scrollFix, setScrollFix] = useState(false)
     const containerRef = useRef(null)
 
     const bgRef = useRef(null)
@@ -47,8 +48,10 @@ export default function Home() {
 
     const navigate = useNavigate()
 
-    var SetMenuOpen = (value) => {
+    var ToggleStuff = (value) => {
+        console.log(value)
         setMenuOpen(value)
+        setScrollFix(value)
     }
 
     useEffect(() => {
@@ -86,14 +89,10 @@ export default function Home() {
             <Section className="font-graphik">
                 <Header
                     menuOpen={menuOpen}
-                    setMenuOpen={setMenuOpen}
+                    setMenuOpen={ToggleStuff}
                     scrollTop={home}
                 />
-                <Menu
-                    menuOpen={menuOpen}
-                    setMenuOpen={setMenuOpen}
-                    SetMenuOpen={SetMenuOpen}
-                />
+                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
                 <Intro />
 
@@ -114,14 +113,14 @@ export default function Home() {
             <Section className="font-graphik">
                 <Header
                     menuOpen={menuOpen}
-                    setMenuOpen={setMenuOpen}
+                    setMenuOpen={ToggleStuff}
                     scrollTop={home}
                 />
 
                 <Menu
                     menuOpen={menuOpen}
                     setMenuOpen={setMenuOpen}
-                    SetMenuOpen={SetMenuOpen}
+                    SetScrollFix={setScrollFix}
                 />
 
                 <Intro />

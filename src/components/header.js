@@ -38,8 +38,9 @@ function Header(props) {
                         <Hamburger
                             size={isWideScreen ? 36 : 24}
                             rounded
-                            toggled={props.menuOpen}
-                            toggle={props.setMenuOpen}
+                            onToggle={(toggled) => {
+                                props.setMenuOpen(toggled)
+                            }}
                         />
                     </div>
                 </div>
