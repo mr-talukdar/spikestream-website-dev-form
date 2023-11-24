@@ -49,7 +49,6 @@ export default function Home() {
     const navigate = useNavigate()
 
     var ToggleStuff = (value) => {
-        console.log(value)
         setMenuOpen(value)
         setScrollFix(value)
     }
@@ -119,6 +118,7 @@ export default function Home() {
 
                 <Menu
                     menuOpen={menuOpen}
+                    scrollFix={scrollFix}
                     setMenuOpen={setMenuOpen}
                     SetScrollFix={setScrollFix}
                 />
@@ -128,7 +128,9 @@ export default function Home() {
                     {JSON.stringify(schema)}
                 </script>
                 <div
-                    className={menuOpen ? "fixed md:mt-[2rem]" : "md:mt-[2rem]"}
+                    className={
+                        scrollFix ? "fixed md:mt-[2rem]" : "md:mt-[2rem]"
+                    }
                 >
                     <About navigate={navigate} />
                     <Competencies navigate={navigate} />
