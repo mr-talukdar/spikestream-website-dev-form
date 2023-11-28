@@ -14,11 +14,10 @@ import {
     Contact,
 } from "./components"
 
-import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import { General, Header } from "@components"
 import { useNavigate } from "react-router-dom"
 import Utils from "@helpers/utils"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import { useLocation } from "react-router-dom"
 
 const Section = styled.section`
@@ -29,6 +28,7 @@ const Section = styled.section`
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false)
     const [scrollFix, setScrollFix] = useState(false)
+    const [scrollPosition, setScrollPosition] = useState(0)
     const containerRef = useRef(null)
 
     const bgRef = useRef(null)
@@ -61,15 +61,30 @@ export default function Home() {
         }
     }, [menuOpen])
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "instant" })
-    }, [])
+    // useEffect(() => {
+    //     window.scrollTo({ top: 0, behavior: "instant" })
+    // }, [])
 
     const scrollUp = () => {
         if (pathname === "/") {
             setHome(true)
         }
     }
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setTimeout(() => {
+                setScrollPosition(window.scrollY)
+            }, 100)
+            console.log(scrollPosition)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
     const schema = {
         "@context": "https://schema.org/",
@@ -108,40 +123,48 @@ export default function Home() {
     }
 
     return (
-        <General.CanvasContainer isWideScreen={isWideScreen}>
-            <Section className="font-graphik">
-                <Header
-                    menuOpen={menuOpen}
-                    setMenuOpen={ToggleStuff}
-                    scrollTop={home}
-                />
+        <LocomotiveScrollProvider
+            options={{
+                smooth: true,
+            }}
+            watch={[]}
+            containerRef={containerRef}
+        >
+            <main data-scroll-container ref={containerRef}>
+                {
+                    <General.CanvasContainer isWideScreen={isWideScreen}>
+                        <Section className="font-graphik">
+                            <Header
+                                menuOpen={menuOpen}
+                                setMenuOpen={ToggleStuff}
+                                scrollTop={home}
+                            />
 
-                <Menu
-                    menuOpen={menuOpen}
-                    scrollFix={scrollFix}
-                    setMenuOpen={setMenuOpen}
-                    SetScrollFix={setScrollFix}
-                />
+                            <Menu
+                                menuOpen={menuOpen}
+                                scrollFix={scrollFix}
+                                setMenuOpen={setMenuOpen}
+                                SetScrollFix={setScrollFix}
+                            />
 
-                <Intro />
-                <script type="application/ld+json">
-                    {JSON.stringify(schema)}
-                </script>
-                <div
-                    className={
-                        scrollFix ? "fixed md:mt-[2rem]" : "md:mt-[2rem]"
-                    }
-                >
-                    <About navigate={navigate} />
-                    <Competencies navigate={navigate} />
-                    <Featured navigate={navigate} />
-                    <Principles navigate={navigate} />
-                    <Blogs navigate={navigate} />
+                            <Intro />
+                            <script type="application/ld+json">
+                                {JSON.stringify(schema)}
+                            </script>
+                            <div>
+                                <About navigate={navigate} />
+                                <Competencies navigate={navigate} />
+                                <Featured navigate={navigate} />
+                                <Principles navigate={navigate} />
+                                <Blogs navigate={navigate} />
 
-                    <Client navigate={navigate} />
-                    <Contact navigate={navigate} />
-                </div>
-            </Section>
-        </General.CanvasContainer>
+                                <Client navigate={navigate} />
+                                <Contact navigate={navigate} />
+                            </div>
+                        </Section>
+                    </General.CanvasContainer>
+                }
+            </main>
+        </LocomotiveScrollProvider>
     )
 }
