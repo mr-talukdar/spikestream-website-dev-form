@@ -4,10 +4,10 @@ import { useEffect, useState } from "react"
 import { Oval } from "react-loader-spinner"
 import emailjs from "@emailjs/browser"
 import { PORTFOLIO_IMAGES } from "@images"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom"
 
 const Form = ({ open, setOpen }) => {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     const [name, setName] = useState("")
 
@@ -109,7 +109,9 @@ const Form = ({ open, setOpen }) => {
                             alt={PORTFOLIO_IMAGES.form_success}
                         />
                         <div className="mt-12 font-graphik font-light text-2xl tablet:text-5xl text-center">
-                            Thank you, we will get back<br />to you soon
+                            Thank you, we will get back
+                            <br />
+                            to you soon
                         </div>
                     </div>
                 )
@@ -135,7 +137,9 @@ const Form = ({ open, setOpen }) => {
         return (
             <div className="font-graphik">
                 <div className="w-11/12 font-light text-3xl laptop:text-6xl laptop:leading-regular">
-                    Let’s create your next significant<br />impact together.
+                    Let’s create your next significant
+                    <br />
+                    impact together.
                 </div>
                 <div className="mt-4 laptop:mt-12 text-accent smallphone:w-2/3 w-5/6 smallphone:text-sm text-base laptop:text-lg">
                     Share your details and let us get back to you
@@ -149,12 +153,14 @@ const Form = ({ open, setOpen }) => {
                                 OnChange={SetName}
                                 type="text"
                                 value={name}
+                                required={true}
                             />
                             <InputField
                                 label="Email Id"
                                 OnChange={SetEmail}
                                 type="email"
                                 value={email}
+                                required={true}
                             />
                             <MobileInputField
                                 value={number}
@@ -166,6 +172,7 @@ const Form = ({ open, setOpen }) => {
                             message={true}
                             OnChange={SetMessage}
                             value={message}
+                            required={true}
                         />
                         <button
                             type="submit"
@@ -199,9 +206,7 @@ const Form = ({ open, setOpen }) => {
                     </svg>
                 </button>
             </div>
-            {
-                getMainContent()
-            }
+            {getMainContent()}
         </div>
     )
 }
