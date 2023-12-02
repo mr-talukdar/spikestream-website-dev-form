@@ -105,7 +105,9 @@ const Form = ({ open, setOpen }) => {
                             alt={PORTFOLIO_IMAGES.form_success}
                         />
                         <div className="mt-12 font-graphik font-light text-2xl tablet:text-6xl text-center">
-                            Thank you, we will get<br />back to you soon
+                            Thank you, we will get
+                            <br />
+                            back to you soon
                         </div>
                     </div>
                 )
@@ -117,7 +119,9 @@ const Form = ({ open, setOpen }) => {
                         alt={PORTFOLIO_IMAGES.form_error}
                     />
                     <div className="mt-12 font-graphik font-light text-2xl tablet:text-[70px] text-center">
-                        Sorry, something went<br />wrong
+                        Sorry, something went
+                        <br />
+                        wrong
                     </div>
                     <div
                         onClick={resetForm}
@@ -131,7 +135,9 @@ const Form = ({ open, setOpen }) => {
         return (
             <div className="font-graphik">
                 <div className="w-11/12 font-light text-3xl laptop:text-6xl laptop:leading-regular">
-                    Let’s create your next significant<br />impact together.
+                    Let’s create your next significant
+                    <br />
+                    impact together.
                 </div>
                 <div className="mt-4 laptop:mt-12 text-accent smallphone:w-2/3 w-5/6 smallphone:text-sm text-base laptop:text-lg">
                     Share your details and let us get back to you
@@ -145,12 +151,14 @@ const Form = ({ open, setOpen }) => {
                                 OnChange={SetName}
                                 type="text"
                                 value={name}
+                                required={true}
                             />
                             <InputField
                                 label="Email Id"
                                 OnChange={SetEmail}
                                 type="email"
                                 value={email}
+                                required={true}
                             />
                             <MobileInputField
                                 value={number}
@@ -162,6 +170,7 @@ const Form = ({ open, setOpen }) => {
                             message={true}
                             OnChange={SetMessage}
                             value={message}
+                            required={true}
                         />
                         <button
                             type="submit"
@@ -179,10 +188,11 @@ const Form = ({ open, setOpen }) => {
 
     return (
         <nav
-            className={`menu fixed flex flex-col top-0 left-0 w-full p-10 laptop:px-40 z-50 h-screen py-20 laptop:py-32 bg-black transform delay-100 transition-all duration-500 ${ open
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-full"
-                }`}
+            className={`menu fixed flex flex-col top-0 left-0 w-full p-10 laptop:px-40 z-50 h-screen py-20 laptop:py-32 bg-black transform delay-100 transition-all duration-500 ${
+                open
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-full"
+            }`}
         >
             <div className="absolute top-8 right-8">
                 <button
