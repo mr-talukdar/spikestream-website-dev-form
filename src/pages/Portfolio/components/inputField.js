@@ -24,6 +24,7 @@ const InputField = (props) => {
                 className="border-0 pb-4 bg-transparent border-b border-[#B1B1B1] w-full placeholder-white focus:outline-none"
                 placeholder={props.label}
                 value={props.value}
+                required={props.required}
             ></input>
         </div>
     )
