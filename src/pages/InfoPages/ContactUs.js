@@ -189,7 +189,7 @@ const Form = ({ open, setOpen }) => {
     }
 
     return (
-        <div className="p-10 laptop:px-40 z-50 h-screen py-20 laptop:py-32">
+        <div className="p-10 laptop:px-40 z-50 h-[100svh] py-20 laptop:py-32">
             <div className="absolute top-8 right-8">
                 <button
                     className="text-subtle flex flex-row items-center"

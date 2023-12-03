@@ -2,8 +2,11 @@ import PhoneInput from "react-phone-input-2"
 import "react-phone-input-2/lib/style.css"
 
 const MobileInputField = (props) => {
-    const handleChange = (value) => {
+    const handleChange = (value, country) => {
         props.OnChange(value)
+        const c = country.countryCode.toUpperCase();
+        if(c === props.country) return;
+        props.OnCountryChange(c);
     }
     return (
         <div className="py-4 w-full">
