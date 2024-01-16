@@ -157,9 +157,9 @@ function BlogPage() {
                                             </div>
                                         </div>
                                         <div className="text-[#F5F5F5] font-light text-[36px] laptop:text-[60px] mt-12 fade-container">
-                                            <p className="fade-up reveal-clip-anim">
+                                            <h1 className="fade-up reveal-clip-anim">
                                                 {blogData.title}
-                                            </p>
+                                            </h1>
                                         </div>
                                         <div className="flex flex-row items-center mt-4 fade-container">
                                             <img
@@ -172,7 +172,7 @@ function BlogPage() {
                                     </div>
                                 </div>
                                 <div className="px-6 py-6 tablet:px-16 laptop:px-44 laptop:py-14 bg-[#2C2C2C]">
-                                    <div
+                                    <p
                                         className="text-base mac:text-lg ultrawide:text-xl font-graphik"
                                         dangerouslySetInnerHTML={{
                                             __html: blogData.body.html,

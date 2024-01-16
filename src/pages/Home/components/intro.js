@@ -71,19 +71,19 @@ function Intro() {
                 <div className="absolute top-0 left-0 w-full h-full px-10 py-56 tablet:py-60 tablet:px-28 laptop:px-44 flex flex-col justify-end">
                     <div className="flex -mb-16 h-1/2 flex-col justify-end">
                         <div className="text-base tablet:text-xl">
-                            <p className="fade-up">Digital Agency</p>
+                            <h3 className="fade-up">Digital Agency</h3>
                         </div>
                         <div className="mt-4 tablet:mt-6 sm:mt-4 font-light text-3xl tablet:text-6xl">
-                            <p className="fade-up">
+                            <h1 className="fade-up">
                                 We Design
                                 <span className="text-accent"> Impact</span>
-                            </p>
+                            </h1>
                         </div>
                         <div className="w-full laptop:w-2/5 max-w-[500px] mt-6 text-base text-subtle">
-                            <p className="fade-up">
+                            <h2 className="fade-up">
                                 We create engaging experiences and captivating
                                 campaigns that leave a lasting positive impact
-                            </p>
+                            </h2>
                         </div>
                         {/* <div className="mt-10 w-40 h-12 bg-accent rounded-full px-5 py-2 fade-in cursor-pointer">
                             <a

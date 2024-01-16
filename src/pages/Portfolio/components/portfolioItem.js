@@ -46,12 +46,12 @@ const PortfolioItem = ({ data, setFormOpen }) => {
 
                 <div className="mt-2 laptop:mt-6 flex flex-row justify-between">
                     <div>
-                        <div className="font-medium text-base laptop:text-[30px]">
+                        <h2 className="font-medium text-base laptop:text-[30px]">
                             {data.projName}
-                        </div>
-                        <div className="mt-2 laptop:mt-2 font-normal text-subtle text-[14px] laptop:text-[20px]">
+                        </h2>
+                        <p className="mt-2 laptop:mt-2 font-normal text-subtle text-[14px] laptop:text-[20px]">
                             {data.projTopic}
-                        </div>
+                        </p>
                     </div>
                     <div className="font-medium text-[14px] laptop:text-[20px]">
                         {data.isOnRequest ? "On Request" : ""}

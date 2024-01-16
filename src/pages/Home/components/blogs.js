@@ -68,17 +68,17 @@ function Blogs({ navigate }) {
                 className=" relative blogs min-h-screen w-full object-cover justify-between p-10 tablet:py-20 tablet:px-28 laptop:px-44 mac:py-24 ultrawide:py-36 flex flex-col"
             >
                 <div>
-                    <div className="text-base laptop:text-xl fade-up">
+                    <h3 className="text-base laptop:text-xl fade-up">
                         Blogs
-                    </div>
-                    <div className="hidden laptop:block mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">
+                    </h3>
+                    <h2 className="hidden laptop:block mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">
                         Thoughts on how design
                         <br />
                         will shape our future
-                    </div>
-                    <div className="laptop:hidden mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">
+                    </h2>
+                    <h2 className="laptop:hidden mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">
                         Thoughts on how design will shape our future
-                    </div>
+                    </h2>
 
                     <div className="mt-8 tablet:mt-16 laptop:mt-8 mac:mt-12 flex flex-row flex-wrap justify-center laptop:justify-start gap-6 tablet:gap-0">
                         {blogData.map((item) => (

@@ -39,14 +39,14 @@ function PrinciplesTemplate(props) {
                     />
                 </div>
                 <div className="basis-1/2 laptop:basis-7/12  order-2 laptop:order-1">
-                    <div className="fade-up font-light text-3xl tablet:text-6xl">
+                    <h2 className="fade-up font-light text-3xl tablet:text-6xl">
                         {titleLines.map((line, index) => (
                             <div className="mt-1 tablet:mt-2" key={index}>{line}</div>
                         ))}
-                    </div>
-                    <div className="fade-up mt-4 laptop:mt-8 mac:mt-12 text-sm laptop:text-base mac:text-lg ultrawide:text-xl text-subtle  w-full laptop:w-11/12">
+                    </h2>
+                    <p className="fade-up mt-4 laptop:mt-8 mac:mt-12 text-sm laptop:text-base mac:text-lg ultrawide:text-xl text-subtle  w-full laptop:w-11/12">
                         {props.body}
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>

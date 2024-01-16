@@ -164,13 +164,13 @@ function Portfolio() {
                                 className="portfolio font-graphik"
                             >
                                 <div className="w-full py-20 px-10 laptop:py-20 laptop:px-28 mt-8 laptop:mt-20">
-                                    <div className="text-accent text-xl fade-up">
+                                    <h2 className="text-accent text-xl fade-up">
                                         Featured Work
-                                    </div>
-                                    <div className="mt-6 text-3xl laptop:text-6xl laptop:w-5/6 leading-10 font-light fade-up">
+                                    </h2>
+                                    <p className="mt-6 text-3xl laptop:text-6xl laptop:w-5/6 leading-10 font-light fade-up">
                                         We collaborate with global brands to
                                         strengthen their excellence even further
-                                    </div>
+                                    </p>
 
                                     <div className="mt-12 laptop:mt-24 mb-12 grid grid-cols-1 tablet:grid-cols-2 gap-x-6 gap-y-12 laptop:gap-12 laptop:gap-y-24">
                                         {data.map((d, index) => (

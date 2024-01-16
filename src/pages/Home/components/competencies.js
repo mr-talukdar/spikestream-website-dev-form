@@ -25,9 +25,9 @@ function Competencies({ navigate }) {
             <div className="competencies h-full flex flex-col justify-between px-10 tablet:px-28 laptop:px-28 tablet:py-20 py-16 laptop:py-12 mac:py-24 laptop:px-44 bg-black">
                 <div className="h-full flex flex-col justify-between">
                     <div>
-                        <div className="text-base fade-up ultrawide:text-lg">
+                        <h2 className="text-base fade-up ultrawide:text-lg">
                             Competencies
-                        </div>
+                        </h2>
                         <div className="mt-6 text-sm tablet:text-base text-subtle w-full laptop:w-1/2 fade-up ultrawide:text-lg">
                             We are driven to discover the most innovative digital
                             solutions for ambitious brands seeking to break new

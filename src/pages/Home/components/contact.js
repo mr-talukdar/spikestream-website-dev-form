@@ -26,10 +26,10 @@ function Contact() {
         <General.Container ref={contactRef} data-scroll-section>
             <div className="bg-black contact h-full px-10  smallphone:pt-20 smallphone:pb-10 pt-28 pb-16 laptop:py-28 mac:py-32 ultrawide:py-36 tablet:px-28 laptop:px-44 laptop:pb-16">
                 <div className="h-full flex flex-col justify-between">
-                    <div className="fade-up font-light text-3xl tablet:text-6xl w-full tablet:w-4/5 laptop:w-2/5">
+                    <h2 className="fade-up font-light text-3xl tablet:text-6xl w-full tablet:w-4/5 laptop:w-2/5">
                         Want To Design
                         <br /> An Impact?
-                    </div>
+                    </h2>
                     <div className="flex flex-col laptop:flex-row laptop:mb-0 laptop:mt-8">
                         <div className="basis-1/2 h-1/2 laptop:h-full flex flex-col laptop:justify-start">
                             <div className="smallphone:text-sm text-base text-accent fade-up">

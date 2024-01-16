@@ -81,14 +81,14 @@ function FeaturedTemplate(props) {
             }
           </div>
           <div className="basis-1/3 laptop:basis-1/2 flex flex-col order-2 laptop:order-1 w-11/12 justify-end laptop:justify-center">
-            <div className="text-sm tablet:text-base laptop:text-xl fade-up">
+            <h3 className="text-sm tablet:text-base laptop:text-xl fade-up">
               Featured Work
-            </div>
-            <div className="mt-2 tablet:mt-8 font-light text-3xl tablet:text-6xl fade-up">
+            </h3>
+            <h2 className="mt-2 tablet:mt-8 font-light text-3xl tablet:text-6xl fade-up">
               {titleLines.map((line, index) => (
                 <div key={index}>{line}</div>
               ))}
-            </div>
+            </h2>
             <div className="smallphone:mt-2 mt-5 laptop:mt-16 text-base tablet:text-xl fade-up">
               {props.subtitle}
             </div>

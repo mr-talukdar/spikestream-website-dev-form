@@ -32,20 +32,20 @@ function About({ navigate }) {
             >
                 <div className="flex h-full w-full flex flex-col laptop:flex-row justify-center items-center">
                     <div className="basis-2/3 tablet:basis-1/2 flex flex-col justify-center laptop:justify-end order-2 laptop:order-1 mt-0 laptop:mt-10">
-                        <div
+                        <h3
                             className="text-base laptop:text-xl fade-up"
                             ref={revealRef}
                         >
                             About Spike Stream
-                        </div>
-                        <div className="mt-3 laptop:mt-8 sm:mt-3 font-light text-3xl laptop:text-6xl fade-up">
+                        </h3>
+                        <h2 className="mt-3 laptop:mt-8 sm:mt-3 font-light text-3xl laptop:text-6xl fade-up">
                             <span className="text-accent">Propelling </span>
                             Brands
-                        </div>
-                        <div className="font-light text-3xl laptop:text-6xl fade-up mt-1 tablet:mt-2">
+                        </h2>
+                        <h2 className="font-light text-3xl laptop:text-6xl fade-up mt-1 tablet:mt-2">
                             into the Future
-                        </div>
-                        <div className="w-full mt-4 laptop:mt-8 text-base text-subtle fade-up hidden tablet:block">
+                        </h2>
+                        <p className="w-full mt-4 laptop:mt-8 text-base text-subtle fade-up hidden tablet:block">
                             We are a team of passionate design and technology
                             enthusiasts <br />
                             who continuously push the boundaries of innovation,
@@ -53,7 +53,7 @@ function About({ navigate }) {
                             <br />
                             creativity with technology to create enchanting and
                             <br /> extraordinary experiences.
-                        </div>
+                        </p>
                         <div className="w-full mt-4 laptop:mt-8 text-base text-subtle fade-up tablet:hidden">
                             We are a team of passionate design and technology
                             enthusiasts who continuously push the boundaries of innovation,

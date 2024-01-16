@@ -71,13 +71,13 @@ function Client() {
                 style={{ backgroundImage: `url(${HOME_BG.About})` }}
                 className=" relative client min-h-screen w-full object-cover justify-center items-center p-10 tablet:py-16 mac:py-24 ultrawide:py-36 tablet:px-28 laptop:px-44"
             >
-                <div className="text-base laptop:text-xl fade-up">
+                <h3 className="text-base laptop:text-xl fade-up">
                     Clientele
-                </div>
+                </h3>
 
-                <div className="mt-4 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">
+                <h2 className="mt-4 mac:mt-12 text-3xl tablet:text-6xl font-light fade-up">
                     Trusted by
-                </div>
+                </h2>
 
                 <div className="mt-8 mac:mt-12 ultrawide:mt-20 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 mac:gap-8">
                     {clientData.map((d) => (
